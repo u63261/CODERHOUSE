@@ -1,0 +1,791 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-color: black;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(10, 9, 8);
+    display:flex;
+    justify-content:space-between;
+}  
+.header__logo{
+    width: 50x;
+    height: 50px;
+}
+.header__nav{
+     display: flex;
+    flex-direction:row;
+    list-style: none;
+    gap: 1rem;
+}
+.header__li{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(253, 251, 251);
+}    
+   
+.titulo1{
+background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
+font-size: 65px;
+height: 300px;
+color: white;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+text-decoration:underline;
+grid-area: elem1;
+padding-top: 85px;
+}
+.titulo2{
+    font-size: 50px;
+    color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 25px 25px 25px 0px;
+}
+.titulo3{
+    font-size: 70px;
+    color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px ;
+    grid-area: elem2;
+}
+.categorias{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+    background-color:rgba(0, 0, 0, 0.5);
+    border:double coral;
+    margin-right: 15px;
+    border-radius: 5px;
+    color: white;
+}
+.video1{
+    margin: 0px 5px 0px 500px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__section{
+    display: flex;
+    flex-direction: column;
+}
+.footer__ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.footer__redes{
+    width: 50px;
+    height: 50px;
+}
+.footer__logo{
+    width: 50x;
+    height: 50px;
+}
+.footer__spam{
+    font-size: small; 
+}
+.imagenes2{
+    width: 700px;
+    height: 500px;
+    margin: 10px10px10px10px;
+    
+}
+.registro__formulario{
+  background-color: black;
+    width: 360px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin:3rem 0rem 3rem 42rem;
+    color: white;
+    border: 3px solid goldenrod;
+    font-size: 16px;  
+}
+
+.registro__caja{
+    background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
+    width: 100%;
+    height: 100%;  
+}
+.registro__logo{
+    width: 75px;
+    height: 75px;
+    margin-left: 135px;
+    margin-bottom: 15px;
+}
+.registro__titulo1{
+    margin-bottom: 45px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 15px;
+    text-align: center;
+}
+    .registro__titulo2{
+        font-size:15px ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin-left: 15px;
+    }
+    .registro__link{
+        font-size: 12px;
+        position: relative;
+        left: 100px;
+    }
+    .registro__parrafo{
+        font-size: 12px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 15px;
+    }
+    .registro__casilla{
+        height: 220px;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .registro__boton1{
+        width: 200px;
+        height: 50px;
+        position: relative;
+        left: 75px;
+        background-color: burlywood;
+        border-radius: 3px;
+        margin-top: 15px;
+    }
+    .registro__boton2{
+        width: 200px;
+        height: 30px;        position: relative;
+        left: 75px;
+        background-color: rgb(243, 241, 237);
+        border-radius: 3px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+
+    }
+    .registro__span{
+        color: grey;
+        margin-left: 90px;
+    }
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(5fr);
+    grid-template-rows: 200px200px 200px 200px;
+    grid-template-areas: 
+    "elem8 elem8 elem8 elem8 elem8"
+    "elem6 elem1 elem1 elem2 elem7"
+    "elem6 elem3 elem4 elem2 elem7"
+    "elem6 elem3 elem5 elem5 elem7";
+}
+.grid1__titulo{
+    grid-area: elem8;
+    height: 100px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.grid1__estreno1{
+grid-area: elem1;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno1:hover{
+    transform: scale(1.1);
+}
+.grid1__estreno2{
+grid-area: elem2;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno2:hover{
+    transform: scale(1.1);
+}
+
+.grid1__estreno3{
+grid-area: elem3;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno3:hover{
+    transform: scale(1.1);
+}
+.grid1__estreno4{
+grid-area: elem4;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno4:hover{
+    transform: scale(1.1);
+}
+.grid1__estreno5{
+grid-area: elem5;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno5:hover{
+    transform: scale(1.1);
+}
+.grid1__estreno6{
+grid-area: elem6;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno6:hover{
+    transform: scale(1.1);
+}
+.grid1__estreno7{
+grid-area: elem7;
+width: 100%;
+height: 100%;
+padding: 5px;
+border-radius: 25px;
+transition:transform 1s;
+}
+.grid1__estreno7:hover{
+    transform: scale(1.1);
+}
+.grid2{
+    background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
+    height: 100%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: repeat(5fr);
+    grid-template-areas:
+    "elem1 elem1 elem1 elem1 elem1"
+    "elem2 elem3 elem4 elem5 elem6"
+    "elem7 elem7 elem7 elem7 elem7"
+    "elem8 elem9 elem10 elem11 elem12"
+    ;
+}
+.grid2__peliculas{
+    grid-area: elem1;
+}
+.grid2__pelaccion{
+    grid-area: elem2;    
+}
+.grid2__pelterror{
+    grid-area: elem3;
+}
+.grid2__peldrama{
+    grid-area: elem4;
+}
+.grid2__pelcienciaficcion{
+    grid-area: elem5;
+}
+.grid2__pelcomedia{
+    grid-area: elem6;
+}
+.grid2__series{
+    grid-area: elem7;
+}
+.grid2__seraccion{
+    grid-area: elem8;
+}
+.grid2__serterror{
+    grid-area: elem9;
+}
+.grid2__serdrama{
+    grid-area: elem10;
+}
+.grid2__sercienciaficcion{
+    grid-area: elem11;
+}
+.grid2__sercomedia{
+    grid-area: elem12;
+}
+.grid3{
+    display: grid;
+    background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
+    grid-template-columns:repeat(3fr) ;
+    grid-template-rows:repeat(3f) ;
+    grid-template-areas:
+    "elem1 elem1 elem1"
+    "elem2 elem3 elem4"
+    "elem5 elem5 elem5"
+     ;
+}
+.grid3__titulo{
+    margin-top: 5rem;
+    grid-area: elem1;
+    font-size: 50px;
+    text-align: center;
+}
+.grid3__combo1{
+    grid-area: elem2;
+    width: 300px;
+    height: 150px;
+    margin: 5%;
+    margin-left: 20%;
+    background-color: rgb(41, 41, 66);
+    border: 5px solid white;
+    text-align: center;
+    margin-top: 10%;
+}
+.grid3__combo2{
+    grid-area: elem3;
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    margin: 5%;
+    margin-left: 20%;
+    border: 5px solid white;
+    text-align: center;
+    margin-top: 10%;
+}
+.grid3__combo3{
+    grid-area: elem4;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(39, 39, 117);
+    margin: 5%;
+    margin-left: 20%;
+    border: 5px solid white;
+    text-align: center;
+    margin-top: 10%;
+}
+.grid3__span{
+    grid-area: elem5;
+    font-size: medium;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+/* ------------------------------------------------------ ---------------------------------------------------------*/
+@media screen and (max-width:1023px) {
+    .header{
+     background-color:rgb(44, 69, 116);
+     width: 100%;
+    }
+    body{
+     background-color: rgb(58, 59, 57);
+    } 
+    .titulo1{
+     font-size: 45px;
+     height: 200px;
+     color: black;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+    } 
+    .grid1{
+        background-color: rgb(10, 9, 8);
+        overflow: hidden;
+        grid-template-columns: repeat(5fr);
+        grid-template-rows: 100px 100px 100px;
+    } 
+    .estreno1{
+        grid-area: elem1;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno2{
+        grid-area: elem2;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno3{
+        grid-area: elem3;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno4{
+        grid-area: elem4;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno5{
+        grid-area: elem5;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno6{
+        grid-area: elem6;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+        .estreno7{
+        grid-area: elem7;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        }
+    .grid2{
+       margin-top: 3rem;
+        overflow: hidden;
+        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-columns: repeat(5fr);
+        align-items: center;
+
+}
+.grid2__peliculas{
+    grid-area: elem1;
+    font-size: 25px;
+    color: bisque;
+}
+.grid2__pelaccion{
+    grid-area: elem2;
+    font-size: 25px;    
+}
+.grid2__pelterror{
+    grid-area: elem3;
+    font-size: 25px;
+}
+.grid2__peldrama{
+    grid-area: elem4;
+    font-size: 25px;
+}
+.grid2__pelcienciaficcion{
+    grid-area: elem5;
+    font-size: 25px;
+}
+.grid2__pelcomedia{
+    grid-area: elem6;
+    font-size: 25px;
+}
+.grid2__series{
+    grid-area: elem7;
+    font-size: 25px;
+}
+.grid2__seraccion{
+    grid-area: elem8;
+    font-size: 25px;
+}
+.grid2__serterror{
+    grid-area: elem9;
+    font-size: 25px;
+}
+.grid2__serdrama{
+    grid-area: elem10;
+    font-size: 25px;
+}
+.grid2__sercienciaficcion{
+    grid-area: elem11;
+    font-size: 25px;
+}
+.grid2__sercomedia{
+    grid-area: elem12;
+    font-size: 25px;
+}
+.grid3{
+    overflow: hidden;
+    grid-template-columns:repeat(3fr) ;
+    grid-template-rows:repeat(3f) 
+    }
+    .grid3__titulo{
+        margin-top: 5rem;
+        grid-area: elem1;
+        font-size: 50px;
+        text-align: center;
+    }
+    .grid3__combo1{
+        grid-area: elem2;
+        width: 190px;
+        height: 300px;
+        margin-left: 10%;
+        background-color: rgb(41, 41, 66);
+        border: 5px solid white;
+        text-align: center;
+        margin-top: 10%;
+
+    }
+    .grid3__combo2{
+        grid-area: elem3;
+        width: 190px;
+        height: 300px;
+        background-color: blue;
+        margin-left: 10%;
+        border: 5px solid white;
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    .grid3__combo3{
+        grid-area: elem4;
+        width: 190px;
+        height: 300px;
+        background-color: rgb(39, 39, 117);
+        margin-left: 10%;
+        border: 5px solid white;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .grid3__span{
+        grid-area: elem5;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    .video1{
+        margin: 200px;
+        width: 400px;
+        height: 300px;
+    }
+    /* --------------------------------------------------------------------------------------------------------------     */
+@media screen and (max-width:700px) {  
+       body{
+        background-color: rgb(24, 26, 22);
+       } 
+       .header{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        background-color: rgb(10, 9, 8);
+        display:flex;
+        justify-content:space-between;
+    }  
+    .header__logo{
+        width: 50x;
+        height: 50px;
+    }
+    .header__nav{
+         display: flex;
+        flex-direction:column;
+        list-style: none;
+        /* gap: 1rem; */
+    }
+    .header__li{
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(253, 251, 251);
+    }    
+
+    .titulo1{
+        background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
+        font-size: 25px;
+        height: 100px;
+        margin: 5px;
+        color: rgb(240, 226, 226);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        text-decoration:underline;
+        }
+        .titulo2{
+            font-size: 15px;
+            color: rgb(18, 16, 121);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 25px 25px 25px 0px;
+        }
+        .titulo3{
+            font-size: 15px;
+            color: rgb(116, 197, 22);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 5px ;
+            grid-area: elem2;
+        }
+       .grid1{
+           background-color: rgb(10, 9, 8);
+           overflow: hidden;
+           grid-template-columns: repeat(5fr);
+           grid-template-rows: 100px 100px 100px;
+       } 
+       .estreno1{
+           grid-area: elem1;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno2{
+           grid-area: elem2;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno3{
+           grid-area: elem3;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno4{
+           grid-area: elem4;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno5{
+           grid-area: elem5;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno6{
+           grid-area: elem6;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+           .estreno7{
+           grid-area: elem7;
+           width: 100%;
+           height: 100%;
+           padding: 5px;
+           border-radius: 25px;
+           }
+       .grid2{
+          margin-top: 3rem;
+           overflow: hidden;
+           grid-template-rows: 50px 50px 50px 50px;
+           grid-template-columns: repeat(5fr);
+           align-items: center;
+   
+   }
+   .grid2__peliculas{
+       grid-area: elem1;
+       font-size: 25px;
+       color: bisque;
+   }
+   .grid2__pelaccion{
+       grid-area: elem2;
+       font-size: 25px;    
+   }
+   .grid2__pelterror{
+       grid-area: elem3;
+       font-size: 25px;
+   }
+   .grid2__peldrama{
+       grid-area: elem4;
+       font-size: 25px;
+   }
+   .grid2__pelcienciaficcion{
+       grid-area: elem5;
+       font-size: 25px;
+   }
+   .grid2__pelcomedia{
+       grid-area: elem6;
+       font-size: 25px;
+   }
+   .grid2__series{
+       grid-area: elem7;
+       font-size: 25px;
+   }
+   .grid2__seraccion{
+       grid-area: elem8;
+       font-size: 25px;
+   }
+   .grid2__serterror{
+       grid-area: elem9;
+       font-size: 25px;
+   }
+   .grid2__serdrama{
+       grid-area: elem10;
+       font-size: 25px;
+   }
+   .grid2__sercienciaficcion{
+       grid-area: elem11;
+       font-size: 25px;
+   }
+   .grid2__sercomedia{
+       grid-area: elem12;
+       font-size: 25px;
+   }
+   .grid3{
+       overflow: hidden;
+       grid-template-columns:repeat(3fr) ;
+       grid-template-rows:repeat(3f) 
+       }
+       .grid3__titulo{
+           margin-top: 5rem;
+           grid-area: elem1;
+           font-size: 50px;
+           text-align: center;
+       }
+       .grid3__combo1{
+           grid-area: elem2;
+           width: 190px;
+           height: 300px;
+           margin-left: 10%;
+           background-color: rgb(41, 41, 66);
+           border: 5px solid white;
+           text-align: center;
+           margin-top: 10%;
+   
+       }
+       .grid3__combo2{
+           grid-area: elem3;
+           width: 190px;
+           height: 300px;
+           background-color: blue;
+           margin-left: 10%;
+           border: 5px solid white;
+           margin-top: 10%;
+           font-size: 20px;
+       }
+       .grid3__combo3{
+           grid-area: elem4;
+           width: 190px;
+           height: 300px;
+           background-color: rgb(39, 39, 117);
+           margin-left: 10%;
+           border: 5px solid white;
+           text-align: center;
+           margin-top: 10%;
+       }
+       .grid3__span{
+           grid-area: elem5;
+           font-size: 12px;
+           text-align: center;
+           margin-top: 10%;
+           margin-bottom: 15%;
+       }
+       .video1{
+           margin: 200px;
+           width: 400px;
+           height: 300px;
+       } 
+}
