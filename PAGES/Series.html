@@ -11,18 +11,21 @@
 <body >
     <header class="header">
         <a  href="../index.html"> <img class="header__logo" src="../IMAGENES/LOGOS/logoamazonprime.jpg" alt="logoinicio"></a>
-           <nav>
+          <a href="#lateral" class="header__open">
+            <span class="jam jam-menu"></span>
+          </a>   
+        <nav class="header__nav" id="lateral">
                <label for="lenguaje"></label>
-               <select  name="lenguaje" id="lenguaje">
+               <select class="header__lenguaje" name="lenguaje" id="lenguaje">
                    <option value="ESPAÑOL">ESPAÑOL</option>
                    <option value="INGLES">INGLES</option>
                    <option value="ITALIANO">ITALIANO</option>
                    <option value="PORTUGUES">PORTUGUES</option>
                </select>
-                <ul class="header__nav">
-                    <li><a class="header__li"  href="../PAGES/Registro.html">REGISTRESE</a></li>
-                    <li><a class="header__li" href="../PAGES/Registro.html">INICIAR SESION</a></li>
-                    <li><a class="header__li" href="../PAGES/Contacto.html">CONTACTO</a></li>
+                <ul class="header__ul">
+                    <li><a class="header__li"  href="PAGES/Registro.html">REGISTRESE</a></li>
+                    <li><a class="header__li" href="PAGES/Registro.html">INICIAR SESION</a></li>
+                    <li><a class="header__li" href="PAGES/Contacto.html">CONTACTO</a></li>
                 </ul>          
            </nav>             
 </header>
