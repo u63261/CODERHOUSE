@@ -974,6 +974,9 @@ left: 10px;
 
 }
 
+.header__close{
+    display: none;
+}
 /* ------------------------------------------------------ ---------------------------------------------------------*/
 @media screen and (max-width:1023px) {
     .header{
@@ -1170,6 +1173,9 @@ left: 10px;
         height: 35px;
         width: 130px;
        } 
+       .header__close{
+           display: none;
+       }
     /* --------------------------------------------------------------------------------------------------------------     */
     @media screen and (max-width:700px) {  
     *{
@@ -1201,9 +1207,7 @@ left: 10px;
          color: rgb(252, 246, 246);
          text-decoration: none;
      }
-     .header__close{
-
-     }
+     
      #lateral{
          background-color: rgb(13, 13, 71);
          display: block;
@@ -1237,6 +1241,9 @@ left: 10px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: rgb(253, 251, 251);
      }    
+     .header__close{
+        display: none;
+    }
        
     .titulo1{
     background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
