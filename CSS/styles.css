@@ -7,15 +7,17 @@
     color: white;
     width: 100%;
     height: 100%;
-    font-size: 20px;
-    background: rgb(32,30,148);
-    background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
+    font-size: 25px;
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
     font-family: 'Roboto', sans-serif;
  }
  .header{
     width: 100%;
     padding: 1rem;
     background-color: rgb(10, 9, 8);
+    /* position: fixed;
+    z-index: 1; */
     display:flex;
     justify-content:space-between;
  }  
@@ -30,8 +32,8 @@
     width: 130px;
    } 
  .header__logo{
-    width: 50x;
-    height: 50px;
+    width: 70x;
+    height: 70px;
  }
  .header__nav{
      display: flex;
@@ -48,374 +50,281 @@
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(253, 251, 251);
- }    
-   
-.titulo1{
-background: radial-gradient(circle, rgba(148,30,30,1) 27%, rgba(31,9,121,1) 100%);
-font-size: 65px;
-height: 300px;
-color: white;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-align: center;
-text-decoration:underline;
-grid-area: elem1;
-padding-top: 85px;
+ } 
+ .section1{
+     width: 100%;
+     height: 100%;
+     position: relative;
+ }   
+.section1__imagen{
+  width: 100%;
+  height: 100vh;
 }
-.titulo2{
-    font-size: 50px;
-    color: burlywood;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 25px 25px 25px 0px;
+.section1__titulo{
+    position: absolute;
+    bottom: 500px;
+    left: 6rem;
+    font-size: 90px;
+    font-family: fantasy;
+    color: black;
 }
-.titulo3{
-    font-size: 70px;
-    color: burlywood;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.section1__div{
+    position: absolute;
+    width: 900px;
+    min-height: 100px;
+    bottom: 290px;
+    left: 6rem;
+    padding: auto;
+    border-bottom: 1px solid black;
+    border-top:1px solid black ;
+}
+.section1_divparrafo{
+    color: black;
+    font-size: 35px;
+    text-align: left;
+}
+.section2{
+    border-top: 25px solid black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(3fr);
+    grid-template-areas:
+    "elem1 elem1"
+    "elem2 elem3"
+    "elem4 elem5";
+}
+.section2__titulo{
+    grid-area: elem1;
     text-align: center;
-    margin: 5px ;
+    font-size: 55px;
+    margin: 4rem;
+    text-decoration: wavy;
+}
+.section2__categoria1{
+    margin: 3rem;
     grid-area: elem2;
-}
-.categorias{
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
-    background-color:rgba(0, 0, 0, 0.5);
-    border:double coral;
-    margin-right: 15px;
-    border-radius: 5px;
-    color: white;
-}
-.video1{
-    width: 500px;
-    height: 400px;
-    margin-left: 250px;
-}
-.footer{
+    text-align: center;
+    font-size: 55px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
+}
+.section2__categoria2{
+    margin: 3rem;
+    grid-area: elem3;
+    text-align: center;
+    font-size: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section2__div1{
+    height: 500px;
+    margin: 25px;
+    grid-area: elem4;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px double white;
+    background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+    transition: 1s;
+}
+.section2__div1:hover{
+    transform: scale(1.2);
+}
+.section2__div2{
+    height: 500px;
+    margin: 25px;
+    grid-area: elem5;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px double white;
+    background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+    transition: 1s;
+}
+.section2__div2:hover{
+    transform: scale(1.2);
+}
+.section3{
+    height: 50vh;
+    margin-bottom: 5rem;
+    border-top: 15px solid black;
+    align-content: space-around;
+    background: rgb(3,0,0);
+    background: linear-gradient(180deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    display: grid;
+    grid-template-rows: repeat(200px 200px);
+    grid-template-columns:repeat(25px 50px 25px) ;
+    grid-template-areas: 
+    "elem1 elem2 elem3"
+    "elem4 elem4 elem4";
+}
+.section3__div1{
+    grid-area: elem1;
+    width: 550px;
+    min-height: 300px;
+    padding: 1rem;
+    margin: auto;
+    border: 9px outset darkturquoise;
+    background-color: rgb(27, 26, 26);
+}
+
+.section3__div2{
+    grid-area: elem2;
+    width: 550px;
+    min-height: 300px;
+    padding: 1rem;
+    margin: auto;
+    border: 9px outset midnightblue;
+    background-color: rgb(27, 26, 26);
+}
+
+.section3__div3{
+    grid-area: elem3;
+    width: 550px;
+    min-height: 300px;
+    padding: 1rem;
+    margin: auto;
+    border: 9px outset darkslateblue;
+    background-color: rgb(27, 26, 26);
+}
+.section3__divtitulo{
+    color: black;
+    text-decoration: underline;
+    font-size:45px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section3__divparrafo{
+    font-size:25px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section3__span{
+    grid-area: elem4;
+    text-align: center;
+    font-size: 20px;
 }
 .footer__section{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: rgb(12, 8, 8);
 }
-.footer__ul{
+.footer__section--logo{
+    width: 300px;
+    height: 100px;
+}
+.footer__section--span{
+    font-size: 20px;
+}
+
+.footer__section--ul{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-.footer__redes{
-    width: 50px;
-    height: 50px;
+.footer__section--link{
+    text-decoration: none;
+    font-size: 50px;
 }
-.footer__logo{
-    width: 50x;
-    height: 50px;
-}
-.footer__spam{
-    font-size: small; 
-}
-.imagenes2{
-    width: 700px;
-    height: 500px;
-    margin: 10px10px10px10px;
-    
-}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------REGISTRO-------------------------------------- */
+
 .registro__formulario{
   background-color: black;
-    width: 360px;
-    height: 500px;
+    width: 600px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;  
     margin:auto;
     color: white;
     border: 3px solid rgb(246, 245, 247);
-    font-size: 16px;  
+    font-size: 20px;  
 }
 
 .registro__caja{
     background: rgb(32,30,148);
     background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-    width: 100%;
-    height: 100%; 
-    padding: 3rem;
+    height: 100vh; 
+    padding: 10rem;
 }
 .registro__logo{
-    width: 75px;
-    height: 75px;
-    margin-left: 135px;
-    margin-bottom: 15px;
+    width: 105px;
+    height: 105px;
+    margin: auto;
 }
 .registro__titulo1{
     margin-bottom: 45px;
     font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 15px;
     text-align: center;
 }
     .registro__titulo2{
-        font-size:15px ;
+        font-size:20px ;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding-top: 15px;
-        padding-bottom: 5px;
-        margin-left: 15px;
+        margin-left: 25px;
     }
     .registro__link{
-        font-size: 12px;
+        font-size: 20px;
         position: relative;
-        left: 100px;
+        left: 25px;
     }
     .registro__parrafo{
-        font-size: 12px;
+        font-size: 18px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         margin: 15px;
     }
     .registro__casilla{
-        height: 220px;
+        width: 90%;
+        height: 50px;
         border-radius: 5px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
     .registro__boton1{
         width: 200px;
         height: 50px;
         position: relative;
-        left: 75px;
+        left: 200px;
         background-color: burlywood;
         border-radius: 3px;
         margin-top: 15px;
     }
     .registro__boton2{
         width: 200px;
-        height: 30px;        position: relative;
-        left: 75px;
+        height: 50px; 
+        position: relative;
+        left: 200px;
         background-color: rgb(243, 241, 237);
         border-radius: 3px;
         margin-top: 5px;
         margin-bottom: 15px;
-
+    }
+    .registro__recuerdame{
+    position: relative;
+    left: 200px;
+    }
+    .registro__checkbox{
+    position: relative;
+    left: 340px;
+    top: -20px;
     }
     .registro__span{
         color: grey;
-        margin-left: 90px;
+        margin-left: 185px;
     }
-.grid1{
-    display: grid;
-    grid-template-columns: repeat(5fr);
-    grid-template-rows: 200px200px 200px 200px;
-    grid-template-areas: 
-    "elem8 elem8 elem8 elem8 elem8"
-    "elem6 elem1 elem1 elem2 elem7"
-    "elem6 elem3 elem4 elem2 elem7"
-    "elem6 elem3 elem5 elem5 elem7";
-}
-.grid1__titulo{
-    grid-area: elem8;
-    height: 100px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
-.grid1__estreno1{
-grid-area: elem1;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno1:hover{
-    transform: scale(1.1);
-}
-.grid1__estreno2{
-grid-area: elem2;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno2:hover{
-    transform: scale(1.1);
-}
 
-.grid1__estreno3{
-grid-area: elem3;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno3:hover{
-    transform: scale(1.1);
-}
-.grid1__estreno4{
-grid-area: elem4;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno4:hover{
-    transform: scale(1.1);
-}
-.grid1__estreno5{
-grid-area: elem5;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno5:hover{
-    transform: scale(1.1);
-}
-.grid1__estreno6{
-grid-area: elem6;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno6:hover{
-    transform: scale(1.1);
-}
-.grid1__estreno7{
-grid-area: elem7;
-width: 100%;
-height: 100%;
-padding: 5px;
-border-radius: 25px;
-transition:transform 1s;
-}
-.grid1__estreno7:hover{
-    transform: scale(1.1);
-}
-.grid2{
-    background: rgb(32,30,148);
-    background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-    height: 100%;
-    margin-bottom: 10%;
-    display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: repeat(5fr);
-    grid-template-areas:
-    "elem1 elem1 elem1 elem1 elem1"
-    "elem2 elem3 elem4 elem5 elem6"
-    "elem7 elem7 elem7 elem7 elem7"
-    "elem8 elem9 elem10 elem11 elem12"
-    ;
-}
-.grid2__peliculas{
-    grid-area: elem1;
-}
-.grid2__pelaccion{
-    grid-area: elem2;    
-}
-.grid2__pelterror{
-    grid-area: elem3;
-}
-.grid2__peldrama{
-    grid-area: elem4;
-}
-.grid2__pelcienciaficcion{
-    grid-area: elem5;
-}
-.grid2__pelcomedia{
-    grid-area: elem6;
-}
-.grid2__series{
-    grid-area: elem7;
-}
-.grid2__seraccion{
-    grid-area: elem8;
-}
-.grid2__serterror{
-    grid-area: elem9;
-}
-.grid2__serdrama{
-    grid-area: elem10;
-}
-.grid2__sercienciaficcion{
-    grid-area: elem11;
-}
-.grid2__sercomedia{
-    grid-area: elem12;
-}
-.grid3{
-    display: grid;
-    background: rgb(32,30,148);
-background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-    grid-template-columns:repeat(3fr) ;
-    grid-template-rows:repeat(3f) ;
-    grid-template-areas:
-    "elem1 elem1 elem1"
-    "elem2 elem3 elem4"
-    "elem5 elem5 elem5"
-     ;
-}
-.grid3__titulo{
-    margin-top: 5rem;
-    grid-area: elem1;
-    font-size: 50px;
-    text-align: center;
-}
-.grid3__combo1{
-    font-size: 15px;
-    grid-area: elem2;
-    width: 250px;
-    min-height: 150px;
-    margin: 5%;
-    margin-left: 20%;
-    background-color: rgb(41, 41, 66);
-    border: 5px solid white;
-    text-align: center;
-    margin-top: 10%;
-}
-.grid3__combo2{
-    font-size: 15px;
-    grid-area: elem3;
-    width: 250px;
-    min-height: 150px;
-    background-color: blue;
-    margin: 5%;
-    margin-left: 20%;
-    border: 5px solid white;
-    text-align: center;
-    margin-top: 10%;
-}
-.grid3__combo3{
-    font-size: 15px;
-    grid-area: elem4;
-    width: 250px;
-    min-height: 150px;
-    background-color: rgb(39, 39, 117);
-    margin: 5%;
-    margin-left: 20%;
-    border: 5px solid white;
-    text-align: center;
-    margin-top: 10%;
-}
-.grid3__span{
-    grid-area: elem5;
-    font-size: medium;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 15%;
-}
-.grid4__section{
-width: 100%;
-height: 600%
-}
-.grid4{
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA SERIES------------------------------- */
+
+    .grid4__section{
+    width: 100%;
+    height: 250vh
+    }
+    .grid4{
      display: grid;
      grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
      grid-template-columns: 300px 300px 300px 300px 300px;
@@ -431,251 +340,188 @@ height: 600%
      "elem25 elem25 elem25 elem25 elem25"
      "elem26 elem27 elem28 elem29 elem30";
      }
-.grid4__tituloaccion{
-grid-area: elem1;
-font-size:50px;
-}
-.grid4__accion1{
- grid-area: elem2;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__accion1:hover{
-    transform:scale(1.1)
-}
-.grid4__accion2{
- grid-area: elem3;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__accion2:hover{
-    transform:scale(1.1)
-}
-.grid4__accion3{
- grid-area: elem4;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__accion3:hover{
-    transform:scale(1.1)
-}
-.grid4__accion4{
- grid-area: elem5;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__accion4:hover{
-    transform:scale(1.1)
-}
-.grid4__accion5{
- grid-area: elem6;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__accion5:hover{
-    transform:scale(1.1)
-}
-.grid4__titulocienciaficcion{
- grid-area: elem7;
- font-size:50px;
-}
-.grid4__cienciaficcion1{
- grid-area: elem8;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__cienciaficcion1:hover{
-    transform:scale(1.1)
-}
-.grid4__cienciaficcion2{
- grid-area: elem9;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__cienciaficcion2:hover{
-    transform:scale(1.1)
-}
-.grid4__cienciaficcion3{
- grid-area: elem10;
- width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__cienciaficcion3:hover{
-    transform:scale(1.1)
-}
-  .grid4__cienciaficcion4{
-   grid-area: elem11;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
-}
-.grid4__cienciaficcion4:hover{
-    transform:scale(1.1)
-}
-  .grid4__cienciaficcion5{
-   grid-area: elem12;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
-}
-.grid4__cienciaficcion5:hover{
-    transform:scale(1.1)
-}
-  .grid4__titulocomedia{
-   grid-area: elem13;
-   font-size:50px;
-   }
-   .grid4__comedia1{
-    grid-area: elem14;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__comedia1:hover{
-    transform:scale(1.1)
-}
-   .grid4__comedia2{
-    grid-area: elem15;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__comedia2:hover{
-    transform:scale(1.1)
-}
-   .grid4__comedia3{
-    grid-area: elem16;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__comedia3:hover{
-    transform:scale(1.1)
-}
-   .grid4__comedia4{
-    grid-area: elem17;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__comedia4:hover{
-    transform:scale(1.1)
-}
-   .grid4__comedia5{
-    grid-area: elem18;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__comedia5:hover{
-    transform:scale(1.1)
-}
-   .grid4__titulodrama{
-    grid-area: elem19;
+    .grid4__tituloaccion{
+    grid-area: elem1;
     font-size:50px;
+    }
+    .grid4__imagenes{
+    width: 450px;
+    height: 550px;
+    transition: transform 1s;
+    }
+    .grid4__accion1{
+    grid-area: elem2;
+    }
+    .grid4__accion1:hover{
+        transform:scale(1.1)
+    }
+    .grid4__accion2{
+    grid-area: elem3;
+    }
+    .grid4__accion2:hover{
+        transform:scale(1.1)
+    }
+    .grid4__accion3{
+    grid-area: elem4;
    }
-   .grid4__drama1{
-    grid-area: elem20;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__drama1:hover{
-    transform:scale(1.1)
-}
-   .grid4__drama2{
-    grid-area: elem21;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__drama2:hover{
-    transform:scale(1.1)
-}
-   .grid4__drama3{
-    grid-area: elem22;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__drama3:hover{
-    transform:scale(1.1)
-}
-   .grid4__drama4{
-    grid-area: elem23;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__drama4:hover{
-    transform:scale(1.1)
-}
-   .grid4__drama5{
-    grid-area: elem24;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__drama5:hover{
-    transform:scale(1.1)
-}
-   .grid4__tituloterror{
-    grid-area: elem25;
+    .grid4__accion3:hover{
+        transform:scale(1.1)
+    }
+    .grid4__accion4{
+    grid-area: elem5;
+    }
+    .grid4__accion4:hover{
+        transform:scale(1.1)
+    }
+    .grid4__accion5{
+    grid-area: elem6;
+    }
+    .grid4__accion5:hover{
+        transform:scale(1.1)
+    }
+    .grid4__titulocienciaficcion{
+    grid-area: elem7;
     font-size:50px;
-   }
-   .grid4__terror1{
-    grid-area: elem26;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__terror1:hover{
-    transform:scale(1.1)
-}
-   .grid4__terror2{
-    grid-area: elem27;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__terror2:hover{
-    transform:scale(1.1)
-}
-   .grid4__terror3{
-    grid-area: elem28;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__terror3:hover{
-    transform:scale(1.1)
-}
-   .grid4__terror4{
-    grid-area: elem29;
-    width: 300px;
- height: 400px;
- transition: transform 1s;
-}
-.grid4__terror4:hover{
-    transform:scale(1.1)
-}
-   .grid4__terror5{
-    grid-area: elem30;
-    width: 300px;
-    height: 400px;
-    transition: transform 1s;
-}
-.grid4__terror5:hover{
-    transform:scale(1.1)
-}
+    }
+    .grid4__cienciaficcion1{
+    grid-area: elem8;
+    }
+    .grid4__cienciaficcion1:hover{
+        transform:scale(1.1)
+    }
+    .grid4__cienciaficcion2{
+    grid-area: elem9;
+    }
+    .grid4__cienciaficcion2:hover{
+        transform:scale(1.1)
+    }
+    .grid4__cienciaficcion3{
+    grid-area: elem10;
+    }
+    .grid4__cienciaficcion3:hover{
+        transform:scale(1.1)
+    }
+    .grid4__cienciaficcion4{
+    grid-area: elem11;
+    }
+    .grid4__cienciaficcion4:hover{
+        transform:scale(1.1)
+    }
+    .grid4__cienciaficcion5{
+    grid-area: elem12;
+    }
+    .grid4__cienciaficcion5:hover{
+        transform:scale(1.1)
+    }
+    .grid4__titulocomedia{
+    grid-area: elem13;
+    font-size:50px;
+    }
+    .grid4__comedia1{
+        grid-area: elem14;
+    }
+    .grid4__comedia1:hover{
+        transform:scale(1.1)
+    }
+    .grid4__comedia2{
+        grid-area: elem15;
+    }
+    .grid4__comedia2:hover{
+        transform:scale(1.1)
+    }
+    .grid4__comedia3{
+        grid-area: elem16;
+    }
+    .grid4__comedia3:hover{
+        transform:scale(1.1)
+    }
+    .grid4__comedia4{
+        grid-area: elem17;
+    }
+    .grid4__comedia4:hover{
+        transform:scale(1.1)
+    }
+    .grid4__comedia5{
+        grid-area: elem18;
+    }
+    .grid4__comedia5:hover{
+        transform:scale(1.1)
+    }
+    .grid4__titulodrama{
+        grid-area: elem19;
+        font-size:50px;
+    }
+    .grid4__drama1{
+        grid-area: elem20;
+    }
+    .grid4__drama1:hover{
+        transform:scale(1.1)
+    }
+    .grid4__drama2{
+        grid-area: elem21;
+    }
+    .grid4__drama2:hover{
+        transform:scale(1.1)
+    }
+    .grid4__drama3{
+        grid-area: elem22;
+    }
+    .grid4__drama3:hover{
+        transform:scale(1.1)
+    }
+    .grid4__drama4{
+        grid-area: elem23;
+    }
+    .grid4__drama4:hover{
+        transform:scale(1.1)
+    }
+    .grid4__drama5{
+        grid-area: elem24;
+    }
+    .grid4__drama5:hover{
+        transform:scale(1.1)
+    }
+    .grid4__tituloterror{
+        grid-area: elem25;
+        font-size:50px;
+    }
+    .grid4__terror1{
+        grid-area: elem26;
+    }
+    .grid4__terror1:hover{
+        transform:scale(1.1)
+    }
+    .grid4__terror2{
+        grid-area: elem27;
+    }
+    .grid4__terror2:hover{
+        transform:scale(1.1)
+    }
+    .grid4__terror3{
+        grid-area: elem28;
+    }
+    .grid4__terror3:hover{
+        transform:scale(1.1)
+    }
+    .grid4__terror4{
+        grid-area: elem29;
+    }
+    .grid4__terror4:hover{
+        transform:scale(1.1)
+    }
+    .grid4__terror5{
+        grid-area: elem30;
+    }
+    .grid4__terror5:hover{
+        transform:scale(1.1)
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA PELICULAS---------------------------------- */
+
+.grid5__section{
+    width: 100%;
+    height: 250vh
+    }
    .grid5{
     display: grid;
     grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
@@ -696,47 +542,37 @@ font-size:50px;
 grid-area: elem1;
 font-size:50px;
 }
+.grid5__imagenes{
+    width: 450px;
+    height: 550px;
+    transition: transform 1s;
+}
 .grid5__accion1{
 grid-area: elem2;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__accion1:hover{
     transform:scale(1.1)
 }
 .grid5__accion2{
 grid-area: elem3;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__accion2:hover{
     transform:scale(1.1)
 }
 .grid5__accion3{
 grid-area: elem4;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__accion3:hover{
     transform:scale(1.1)
 }
 .grid5__accion4{
 grid-area: elem5;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__accion4:hover{
     transform:scale(1.1)
 }
 .grid5__accion5{
 grid-area: elem6;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__accion5:hover{
     transform:scale(1.1)
@@ -747,45 +583,30 @@ font-size:50px;
 }
 .grid5__cienciaficcion1{
 grid-area: elem8;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__cienciaficcion1:hover{
     transform:scale(1.1)
 }
 .grid5__cienciaficcion2{
 grid-area: elem9;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__cienciaficcion2:hover{
     transform:scale(1.1)
 }
 .grid5__cienciaficcion3{
 grid-area: elem10;
-width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__cienciaficcion3:hover{
     transform:scale(1.1)
 }
  .grid5__cienciaficcion4{
   grid-area: elem11;
-  width: 300px;
-  height: 400px;
-  transition: transform 1s;
 }
 .grid5__cienciaficcion4:hover{
     transform:scale(1.1)
 }
  .grid5__cienciaficcion5{
   grid-area: elem12;
-  width: 300px;
-  height: 400px;
-  transition: transform 1s;
 }
 .grid5__cienciaficcion5:hover{
     transform:scale(1.1)
@@ -796,45 +617,30 @@ transition: transform 1s;
   }
   .grid5__comedia1{
    grid-area: elem14;
-   width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__comedia1:hover{
     transform:scale(1.1)
 }
   .grid5__comedia2{
    grid-area: elem15;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__comedia2:hover{
     transform:scale(1.1)
 }
   .grid5__comedia3{
    grid-area: elem16;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__comedia3:hover{
     transform:scale(1.1)
 }
   .grid5__comedia4{
    grid-area: elem17;
-   width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__comedia4:hover{
     transform:scale(1.1)
 }
   .grid5__comedia5{
    grid-area: elem18;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__comedia5:hover{
     transform:scale(1.1)
@@ -849,45 +655,30 @@ transition: transform 1s;
 }
   .grid5__drama1{
    grid-area: elem20;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__drama1:hover{
     transform:scale(1.1)
 }
   .grid5__drama2{
    grid-area: elem21;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__drama2:hover{
     transform:scale(1.1)
 }
   .grid5__drama3{
    grid-area: elem22;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__drama3:hover{
     transform:scale(1.1)
 }
   .grid5__drama4{
    grid-area: elem23;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__drama4:hover{
     transform:scale(1.1)
 }
   .grid5__drama5{
    grid-area: elem24;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__drama5:hover{
     transform:scale(1.1)
@@ -898,49 +689,37 @@ transition: transform 1s;
   }
   .grid5__terror1{
    grid-area: elem26;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__terror1:hover{
     transform:scale(1.1)
 }
   .grid5__terror2{
    grid-area: elem27;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__terror2:hover{
     transform:scale(1.1)
 }
   .grid5__terror3{
    grid-area: elem28;
-   width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__terror3:hover{
     transform:scale(1.1)
 }
   .grid5__terror4{
    grid-area: elem29;
-   width: 300px;
-height: 400px;
-transition: transform 1s;
 }
 .grid5__terror4:hover{
     transform:scale(1.1)
 }
   .grid5__terror5{
    grid-area: elem30;
-   width: 300px;
-   height: 400px;
-   transition: transform 1s;
 }
 .grid5__terror5:hover{
     transform:scale(1.1)
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA CONTACTO------------------------------------ */
+
 .div__contacto{
 padding: 2rem;
 text-align: start;
@@ -976,7 +755,7 @@ left: 10px;
 
 .header__close{
     display: none;
-}
+} */
 /* ------------------------------------------------------ ---------------------------------------------------------*/
 @media screen and (max-width:1023px) {
     .header{
