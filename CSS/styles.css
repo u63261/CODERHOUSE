@@ -7,7 +7,7 @@
     color: white;
     width: 100%;
     height: 100%;
-    font-size: 25px;
+    font-size: 15px;
     background: rgb(3,0,0);
     background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
     font-family: 'Roboto', sans-serif;
@@ -64,17 +64,17 @@
 }
 .section1__titulo{
     position: absolute;
-    bottom: 500px;
+    bottom: 340px;
     left: 6rem;
-    font-size: 90px;
+    font-size: 70px;
     font-family: fantasy;
     color: black;
 }
 .section1__div{
     position: absolute;
-    width: 900px;
+    width: 600px;
     min-height: 100px;
-    bottom: 290px;
+    bottom: 120px;
     left: 6rem;
     padding: auto;
     border-bottom: 1px solid black;
@@ -82,7 +82,7 @@
 }
 .section1_divparrafo{
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     text-align: left;
 }
 .section2{
@@ -100,7 +100,7 @@
 .section2__titulo{
     grid-area: elem1;
     text-align: center;
-    font-size: 55px;
+    font-size: 50px;
     margin: 4rem;
     text-decoration: wavy;
 }
@@ -108,20 +108,21 @@
     margin: 3rem;
     grid-area: elem2;
     text-align: center;
-    font-size: 55px;
+    font-size: 35px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .section2__categoria2{
     margin: 3rem;
     grid-area: elem3;
     text-align: center;
-    font-size: 55px;
+    font-size: 35px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section2__div1{
     height: 500px;
-    margin: 25px;
+    width: 700px;
+    margin: auto;
     grid-area: elem4;
     text-align: center;
     border-radius: 5px;
@@ -134,7 +135,8 @@
 }
 .section2__div2{
     height: 500px;
-    margin: 25px;
+    width: 700px;
+    margin: auto;
     grid-area: elem5;
     text-align: center;
     border-radius: 5px;
@@ -146,7 +148,29 @@
     transform: scale(1.2);
 }
 .section3{
-    height: 50vh;
+    border: 2px black solid;
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+}
+.section3__imagen{
+    margin-left: 55px;
+    width: 300px;
+    height: 300px;
+}
+.section3__titulo{
+    text-align: center;
+    font-size: 35px;
+}
+.section3__parrafo{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section4{
+    height: 100vh;
     margin-bottom: 5rem;
     border-top: 15px solid black;
     align-content: space-around;
@@ -159,49 +183,62 @@
     "elem1 elem2 elem3"
     "elem4 elem4 elem4";
 }
-.section3__div1{
+.section4__div1{
     grid-area: elem1;
-    width: 550px;
+    width: 350px;
     min-height: 300px;
     padding: 1rem;
     margin: auto;
     border: 9px outset darkturquoise;
+    border-bottom: none;
     background-color: rgb(27, 26, 26);
 }
 
-.section3__div2{
+.section4__div2{
     grid-area: elem2;
-    width: 550px;
+    width: 350px;
     min-height: 300px;
     padding: 1rem;
     margin: auto;
     border: 9px outset midnightblue;
+    border-bottom: none;
     background-color: rgb(27, 26, 26);
 }
 
-.section3__div3{
+.section4__div3{
     grid-area: elem3;
-    width: 550px;
+    width: 350px;
     min-height: 300px;
     padding: 1rem;
     margin: auto;
     border: 9px outset darkslateblue;
+    border-bottom: none;
     background-color: rgb(27, 26, 26);
 }
-.section3__divtitulo{
+.section4__divtitulo{
     color: black;
     text-decoration: underline;
     font-size:45px ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.section3__divparrafo{
-    font-size:25px ;
+.section4__divparrafo{
+    font-size:20px ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.section3__span{
+.section4__span{
     grid-area: elem4;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+}
+.section4__buttom{
+    margin-bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 .footer__section{
     width: 100%;
@@ -213,23 +250,26 @@
     background-color: rgb(12, 8, 8);
 }
 .footer__section--logo{
-    width: 300px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
 }
 .footer__section--span{
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .footer__section--ul{
     width: 100%;
     height: 100%;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     list-style: none;
+    
 }
 .footer__section--link{
     text-decoration: none;
-    font-size: 50px;
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------REGISTRO-------------------------------------- */
@@ -250,7 +290,7 @@
 .registro__caja{
     background: rgb(32,30,148);
     background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-    height: 100vh; 
+    height: 150vh; 
     padding: 10rem;
 }
 .registro__logo{
@@ -324,7 +364,7 @@
 
     .grid4__section{
     width: 100%;
-    height: 250vh
+    height: 350vh
     }
     .grid4{
      display: grid;
@@ -342,14 +382,17 @@
      "elem25 elem25 elem25 elem25 elem25"
      "elem26 elem27 elem28 elem29 elem30";
      }
+     .grid4__imagenes{
+        padding: 45px;   
+        width: 350px;
+        height: 450px;
+        transition: transform 1s;
+        }
     .grid4__tituloaccion{
     grid-area: elem1;
     font-size:50px;
-    }
-    .grid4__imagenes{
-    width: 450px;
-    height: 550px;
-    transition: transform 1s;
+    margin: 5px;
+    padding: 25px;
     }
     .grid4__accion1{
     grid-area: elem2;
@@ -384,6 +427,8 @@
     .grid4__titulocienciaficcion{
     grid-area: elem7;
     font-size:50px;
+    margin: 5px;
+    padding: 25px;
     }
     .grid4__cienciaficcion1{
     grid-area: elem8;
@@ -418,6 +463,8 @@
     .grid4__titulocomedia{
     grid-area: elem13;
     font-size:50px;
+    margin: 5px;
+    padding: 25px;
     }
     .grid4__comedia1{
         grid-area: elem14;
@@ -452,6 +499,8 @@
     .grid4__titulodrama{
         grid-area: elem19;
         font-size:50px;
+        margin: 5px;
+        padding: 25px;
     }
     .grid4__drama1{
         grid-area: elem20;
@@ -486,6 +535,8 @@
     .grid4__tituloterror{
         grid-area: elem25;
         font-size:50px;
+        margin: 5px;
+        padding: 25px;
     }
     .grid4__terror1{
         grid-area: elem26;
@@ -522,11 +573,11 @@
 
 .grid5__section{
     width: 100%;
-    height: 250vh
+    height: 350vh
     }
    .grid5{
     display: grid;
-    grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
+    grid-template-rows: 100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
     grid-template-columns: 300px 300px 300px 300px 300px;
     grid-template-areas:
     "elem1 elem1 elem1 elem1 elem1"
@@ -540,85 +591,92 @@
     "elem25 elem25 elem25 elem25 elem25"
     "elem26 elem27 elem28 elem29 elem30";
     }
+    .grid5__imagenes{
+        padding: 45px;   
+        width: 350px;
+        height: 450px;
+        transition: transform 1s;
+    }
 .grid5__tituloaccion{
-grid-area: elem1;
-font-size:50px;
-}
-.grid5__imagenes{
-    width: 450px;
-    height: 550px;
-    transition: transform 1s;
+    grid-area: elem1;
+    font-size:50px;
+    margin: 5px;
+    padding: 25px;
 }
 .grid5__accion1{
-grid-area: elem2;
+    grid-area: elem2;
 }
 .grid5__accion1:hover{
     transform:scale(1.1)
 }
 .grid5__accion2{
-grid-area: elem3;
+    grid-area: elem3;
 }
 .grid5__accion2:hover{
     transform:scale(1.1)
 }
 .grid5__accion3{
-grid-area: elem4;
+    grid-area: elem4;
 }
 .grid5__accion3:hover{
     transform:scale(1.1)
 }
 .grid5__accion4{
-grid-area: elem5;
+    grid-area: elem5;
 }
 .grid5__accion4:hover{
     transform:scale(1.1)
 }
 .grid5__accion5{
-grid-area: elem6;
+    grid-area: elem6;
 }
 .grid5__accion5:hover{
     transform:scale(1.1)
 }
 .grid5__titulocienciaficcion{
-grid-area: elem7;
-font-size:50px;
+    grid-area: elem7;
+    font-size:50px;
+    margin: 5px;
+    padding: 25px;
 }
 .grid5__cienciaficcion1{
-grid-area: elem8;
+    grid-area: elem8;
 }
 .grid5__cienciaficcion1:hover{
     transform:scale(1.1)
 }
 .grid5__cienciaficcion2{
-grid-area: elem9;
+    grid-area: elem9;
 }
 .grid5__cienciaficcion2:hover{
     transform:scale(1.1)
 }
 .grid5__cienciaficcion3{
-grid-area: elem10;
+    grid-area: elem10;
 }
 .grid5__cienciaficcion3:hover{
     transform:scale(1.1)
 }
  .grid5__cienciaficcion4{
-  grid-area: elem11;
+    grid-area: elem11;
 }
 .grid5__cienciaficcion4:hover{
     transform:scale(1.1)
 }
  .grid5__cienciaficcion5{
-  grid-area: elem12;
+    grid-area: elem12;
 }
 .grid5__cienciaficcion5:hover{
     transform:scale(1.1)
 }
  .grid5__titulocomedia{
-  grid-area: elem13;
-  font-size:50px;
+    grid-area: elem13;
+    font-size:50px;
+    margin: 5px;
+    padding: 25px;
   }
   .grid5__comedia1{
-   grid-area: elem14;
+    grid-area: elem14;
 }
 .grid5__comedia1:hover{
     transform:scale(1.1)
@@ -650,6 +708,8 @@ grid-area: elem10;
   .grid5__titulodrama{
    grid-area: elem19;
    font-size:50px;
+   margin: 5px;
+   padding: 25px;
 }
   .grid5__drama1{
    grid-area: elem20;
@@ -684,6 +744,8 @@ grid-area: elem10;
   .grid5__tituloterror{
    grid-area: elem25;
    font-size:50px;
+   margin: 5px;
+   padding: 25px;
   }
   .grid5__terror1{
    grid-area: elem26;
@@ -717,6 +779,15 @@ grid-area: elem10;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA CONTACTO------------------------------------ */
+body{
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    font-family: 'Roboto', sans-serif;
+ }
 
 .div__contacto{
 padding: 2rem;
@@ -724,38 +795,45 @@ text-align: start;
 }
 .div__contactotitulo{
 font-size: 35px;
-color: black;
+color:white;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.div__contactoform{
-    position: relative;
+.section__container{
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    padding: 50px 0;
 }
-.div__contactotextarea{
-position: absolute;
-bottom: -10rem;
-left: 10px;
+.section__containertitulo{
+    color:white;
+    font-size: 28px;
+    margin-bottom: 2rem;
+    text-align: right;
+   
 }
-.div__contactoboton{
-    position: absolute;
-    bottom: -10rem;
-    left: 15rem;
+.section__containerul{
+    list-style: none;
+    text-align: right;
 }
-.section__contacto{
-    margin-top: 12rem;
-    margin-bottom: 20px;
+.section__containerli{
+    margin-bottom: 10px;
 }
-.section__contactotitulo{
-    font-size: 35px;
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.section__contacto--ul{
-    list-style: square;
-}
-.section__contacto--link{
+.section__containerlink{
+    font-size: 13px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
+.section__accordion{
+    color: white;
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    padding: 50px;
+}
+.section__accordion-bottom{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+}
+
  /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------VISTA MOBILE------------------------------------     */
 
     @media screen and (max-width:700px) {  
@@ -935,6 +1013,27 @@ left: 10px;
             transform: scale(1.2);
         }
         .section3{
+            width: 100%;
+            min-height: 400px;
+            background-color: white;
+            color: black;
+            padding: 50px;
+        }
+        .section3__imagen{
+            margin-left: 25px;
+            width: 150px;
+            height: 150px;
+        }
+        .section3__titulo{
+            text-align: center;
+            font-size: 25px;
+        }
+        .section3__parrafo{
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .section4{
             height: 150vh;
             margin-bottom: 5rem;
             border-top: 15px solid black;
@@ -950,7 +1049,7 @@ left: 10px;
             "elem3"
             "elem4";
         }
-        .section3__div1{
+        .section4__div1{
             grid-area: elem1;
             width: 200px;
             min-height: 20px;
@@ -960,7 +1059,7 @@ left: 10px;
             background-color: rgb(27, 26, 26);
         }
         
-        .section3__div2{
+        .section4__div2{
             grid-area: elem2;
             width: 200px;
             min-height: 20px;
@@ -970,7 +1069,7 @@ left: 10px;
             background-color: rgb(27, 26, 26);
         }
         
-        .section3__div3{
+        .section4__div3{
             grid-area: elem3;
             width: 200px;
             min-height: 20px;
@@ -979,17 +1078,17 @@ left: 10px;
             border: 9px outset darkslateblue;
             background-color: rgb(27, 26, 26);
         }
-        .section3__divtitulo{
+        .section4__divtitulo{
             color: black;
             text-decoration: underline;
             font-size:10px ;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .section3__divparrafo{
+        .section4__divparrafo{
             font-size:12px ;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .section3__span{
+        .section4__span{
             grid-area: elem4;
             text-align: center;
             font-size: 9px;
