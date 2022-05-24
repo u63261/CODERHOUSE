@@ -1,0 +1,54 @@
+body{
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    font-family: 'Roboto', sans-serif;
+ }
+
+.div__contacto{
+padding: 2rem;
+text-align: start;
+}
+.div__contactotitulo{
+font-size: 35px;
+color:white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section__container{
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    padding: 50px 0;
+}
+.section__containertitulo{
+    color:white;
+    font-size: 28px;
+    margin-bottom: 2rem;
+    text-align: right;
+   
+}
+.section__containerul{
+    list-style: none;
+    text-align: right;
+}
+.section__containerli{
+    margin-bottom: 10px;
+}
+.section__containerlink{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
+.section__accordion{
+    color: white;
+    background: rgb(3,0,0);
+    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    padding: 50px;
+}
+.section__accordion-bottom{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+}

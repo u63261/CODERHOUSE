@@ -1,0 +1,86 @@
+.registro__formulario{
+    background-color: black;
+      width: 550px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+      margin:auto;
+      color: white;
+      border: 3px solid rgb(246, 245, 247);
+      font-size: 20px;  
+  }
+  
+  .registro__caja{
+      background: rgb(32,30,148);
+      background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
+      height: 150vh; 
+      padding: 10rem;
+  }
+  .registro__logo{
+      width: 105px;
+      height: 105px;
+      margin: auto;
+      padding: 10px;
+  }
+  .registro__titulo1{
+      margin-bottom: 45px;
+      font-size: 35px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+  }
+      .registro__titulo2{
+          font-size:20px ;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin-left: 25px;
+      }
+      .registro__link{
+          font-size: 20px;
+          position: relative;
+          left: 25px;
+      }
+      .registro__parrafo{
+          font-size: 18px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin: 15px;
+      }
+      .registro__casilla{
+          width: 90%;
+          height: 50px;
+          border-radius: 5px;
+          margin: auto;
+          margin-bottom: 5px;
+          margin-top: 5px;
+      }
+      .registro__boton1{
+          width: 200px;
+          height: 50px;
+          position: relative;
+          left: 170px;
+          background-color: burlywood;
+          border-radius: 3px;
+          margin-top: 15px;
+      }
+      .registro__boton2{
+          width: 200px;
+          height: 50px; 
+          position: relative;
+          left: 170px;
+          background-color: rgb(243, 241, 237);
+          border-radius: 3px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+      }
+      .registro__recuerdame{
+      position: relative;
+      left: 180px;
+      }
+      .registro__checkbox{
+      position: relative;
+      left: 320px;
+      top: -20px;
+      }
+      .registro__span{
+          color: grey;
+          margin-left: 155px;
+      }

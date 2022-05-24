@@ -1,1662 +1,1751 @@
-*{
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box;
- }
- body{
-    color: white;
-    width: 100%;
-    height: 100%;
-    font-size: 15px;
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
-    font-family: 'Roboto', sans-serif;
- }
- .header{
-    width: 100%;
-    padding: 1rem;
-    background-color: rgb(10, 9, 8);
-    /* position: fixed;
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0a0908;
+  /* position: fixed;
     z-index: 1; */
-    display:flex;
-    justify-content:space-between;
- }  
- .header__open{
-    display: none;
-    font-size: 25px;
-    color: rgb(252, 246, 246);
+  display: flex;
+  justify-content: space-between;
 }
-.header__close{
-    display: none;
+
+.header__open {
+  display: none;
+  font-size: 25px;
+  color: #fcf6f6;
 }
-.header__lenguaje{
-    height: 35px;
-    width: 130px;
-   } 
- .header__logo{
-    width: 70x;
-    height: 70px;
- }
- .header__nav{
-     display: flex;
-     flex-direction:row;
-     gap: 1rem;
- }
- .header__ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
- }
- .header__li{
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(253, 251, 251);
- } 
- .section1{
-     width: 100%;
-     height: 100%;
-     position: relative;
- }   
-.section1__imagen{
+
+.header__close {
+  display: none;
+}
+
+.header__lenguaje {
+  height: 35px;
+  width: 130px;
+}
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.header__ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.header__li {
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fdfbfb;
+}
+
+.footer__section {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c0808;
+}
+
+.footer__section--logo {
+  width: 150px;
+  height: 50px;
+}
+
+.footer__section--span {
+  font-size: 10px;
+}
+
+.footer__section--ul {
+  width: 100%;
+  height: 100%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer__section--link {
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.section1__imagen {
   width: 100%;
   height: 100vh;
 }
-.section1__titulo{
-    position: absolute;
-    bottom: 340px;
-    left: 6rem;
-    font-size: 70px;
-    font-family: fantasy;
-    color: black;
+
+.section__titulo {
+  font-size: 45px;
 }
-.section1__div{
-    position: absolute;
-    width: 600px;
-    min-height: 100px;
-    bottom: 120px;
-    left: 6rem;
-    padding: auto;
-    border-bottom: 1px solid black;
-    border-top:1px solid black ;
+
+.section1__parrafo {
+  font-size: 25px;
 }
-.section1_divparrafo{
-    color: black;
+
+.section2 {
+  border-top: 25px solid #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: repeat(3fr);
+  grid-template-areas: "elem1 elem1" "elem2 elem3" "elem4 elem5";
+}
+
+.section2__titulo {
+  grid-area: elem1;
+  text-align: center;
+  font-size: 50px;
+  margin: 4rem;
+  text-decoration: wavy;
+}
+
+.section2__categoria1 {
+  margin: 3rem;
+  grid-area: elem2;
+  text-align: center;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section2__categoria2 {
+  margin: 3rem;
+  grid-area: elem3;
+  text-align: center;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section2__div1 {
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  grid-area: elem4;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px double white;
+  background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+  transition: 1s;
+}
+
+.section2__div1:hover {
+  transform: scale(1.2);
+}
+
+.section2__div2 {
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  grid-area: elem5;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px double white;
+  background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+  transition: 1s;
+}
+
+.section2__div2:hover {
+  transform: scale(1.2);
+}
+
+.section3 {
+  border: 2px black solid;
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  color: black;
+  padding: 50px;
+}
+
+.section3__imagen {
+  margin-left: 55px;
+  width: 300px;
+  height: 300px;
+}
+
+.section3__titulo {
+  text-align: center;
+  font-size: 35px;
+}
+
+.section3__parrafo {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section4 {
+  height: 100vh;
+  margin-bottom: 5rem;
+  border-top: 15px solid black;
+  align-content: space-around;
+  background: #030000;
+  background: linear-gradient(180deg, #030000 30%, #1e8394 76%);
+  display: grid;
+  grid-template-rows: repeat(200px 200px);
+  grid-template-columns: repeat(25px 50px 25px);
+  grid-template-areas: "elem1 elem2 elem3" "elem4 elem4 elem4";
+}
+
+.section4__div1 {
+  grid-area: elem1;
+  width: 350px;
+  min-height: 300px;
+  padding: 1rem;
+  margin: auto;
+  border: 9px outset darkturquoise;
+  border-radius: 10px;
+  border-bottom: none;
+  background: #cfbdbd;
+  background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+  color: black;
+}
+
+.section4__div2 {
+  grid-area: elem2;
+  width: 350px;
+  min-height: 300px;
+  padding: 1rem;
+  margin: auto;
+  border: 9px outset midnightblue;
+  border-radius: 10px;
+  border-bottom: none;
+  background: #cfbdbd;
+  background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+  color: black;
+}
+
+.section4__div3 {
+  grid-area: elem3;
+  width: 350px;
+  min-height: 300px;
+  padding: 1rem;
+  margin: auto;
+  border: 9px outset darkslateblue;
+  border-radius: 10px;
+  border-bottom: none;
+  background: #cfbdbd;
+  background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+  color: black;
+}
+
+.section4__divtitulo {
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section4__divparrafo {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section4__span {
+  grid-area: elem4;
+  text-align: center;
+  font-size: 15px;
+}
+
+.section4__buttom {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #3b3b80;
+  color: white;
+  padding: 15px;
+  border-radius: 7px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.grid4__section {
+  width: 100%;
+  height: 350vh;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-rows: 100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-template-areas: "elem1 elem1 elem1 elem1 elem1" "elem2 elem3 elem4 elem5 elem6" "elem7 elem7 elem7 elem7 elem7" "elem8 elem9 elem10 elem11 elem12" "elem13 elem13 elem13 elem13 elem13" "elem14 elem15 elem16 elem17 elem18" "elem19 elem19 elem19 elem19 elem19" "elem20 elem21 elem22 elem23 elem24" "elem25 elem25 elem25 elem25 elem25" "elem26 elem27 elem28 elem29 elem30";
+}
+
+.grid4__imagenes {
+  padding: 45px;
+  width: 350px;
+  height: 450px;
+  transition: transform 1s;
+}
+
+.grid4__tituloaccion {
+  grid-area: elem1;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid4__accion1 {
+  grid-area: elem2;
+}
+
+.grid4__accion1:hover {
+  transform: scale(1.1);
+}
+
+.grid4__accion2 {
+  grid-area: elem3;
+}
+
+.grid4__accion2:hover {
+  transform: scale(1.1);
+}
+
+.grid4__accion3 {
+  grid-area: elem4;
+}
+
+.grid4__accion3:hover {
+  transform: scale(1.1);
+}
+
+.grid4__accion4 {
+  grid-area: elem5;
+}
+
+.grid4__accion4:hover {
+  transform: scale(1.1);
+}
+
+.grid4__accion5 {
+  grid-area: elem6;
+}
+
+.grid4__accion5:hover {
+  transform: scale(1.1);
+}
+
+.grid4__titulocienciaficcion {
+  grid-area: elem7;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid4__cienciaficcion1 {
+  grid-area: elem8;
+}
+
+.grid4__cienciaficcion1:hover {
+  transform: scale(1.1);
+}
+
+.grid4__cienciaficcion2 {
+  grid-area: elem9;
+}
+
+.grid4__cienciaficcion2:hover {
+  transform: scale(1.1);
+}
+
+.grid4__cienciaficcion3 {
+  grid-area: elem10;
+}
+
+.grid4__cienciaficcion3:hover {
+  transform: scale(1.1);
+}
+
+.grid4__cienciaficcion4 {
+  grid-area: elem11;
+}
+
+.grid4__cienciaficcion4:hover {
+  transform: scale(1.1);
+}
+
+.grid4__cienciaficcion5 {
+  grid-area: elem12;
+}
+
+.grid4__cienciaficcion5:hover {
+  transform: scale(1.1);
+}
+
+.grid4__titulocomedia {
+  grid-area: elem13;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid4__comedia1 {
+  grid-area: elem14;
+}
+
+.grid4__comedia1:hover {
+  transform: scale(1.1);
+}
+
+.grid4__comedia2 {
+  grid-area: elem15;
+}
+
+.grid4__comedia2:hover {
+  transform: scale(1.1);
+}
+
+.grid4__comedia3 {
+  grid-area: elem16;
+}
+
+.grid4__comedia3:hover {
+  transform: scale(1.1);
+}
+
+.grid4__comedia4 {
+  grid-area: elem17;
+}
+
+.grid4__comedia4:hover {
+  transform: scale(1.1);
+}
+
+.grid4__comedia5 {
+  grid-area: elem18;
+}
+
+.grid4__comedia5:hover {
+  transform: scale(1.1);
+}
+
+.grid4__titulodrama {
+  grid-area: elem19;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid4__drama1 {
+  grid-area: elem20;
+}
+
+.grid4__drama1:hover {
+  transform: scale(1.1);
+}
+
+.grid4__drama2 {
+  grid-area: elem21;
+}
+
+.grid4__drama2:hover {
+  transform: scale(1.1);
+}
+
+.grid4__drama3 {
+  grid-area: elem22;
+}
+
+.grid4__drama3:hover {
+  transform: scale(1.1);
+}
+
+.grid4__drama4 {
+  grid-area: elem23;
+}
+
+.grid4__drama4:hover {
+  transform: scale(1.1);
+}
+
+.grid4__drama5 {
+  grid-area: elem24;
+}
+
+.grid4__drama5:hover {
+  transform: scale(1.1);
+}
+
+.grid4__tituloterror {
+  grid-area: elem25;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid4__terror1 {
+  grid-area: elem26;
+}
+
+.grid4__terror1:hover {
+  transform: scale(1.1);
+}
+
+.grid4__terror2 {
+  grid-area: elem27;
+}
+
+.grid4__terror2:hover {
+  transform: scale(1.1);
+}
+
+.grid4__terror3 {
+  grid-area: elem28;
+}
+
+.grid4__terror3:hover {
+  transform: scale(1.1);
+}
+
+.grid4__terror4 {
+  grid-area: elem29;
+}
+
+.grid4__terror4:hover {
+  transform: scale(1.1);
+}
+
+.grid4__terror5 {
+  grid-area: elem30;
+}
+
+.grid4__terror5:hover {
+  transform: scale(1.1);
+}
+
+.grid5__section {
+  width: 100%;
+  height: 350vh;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-rows: 100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-template-areas: "elem1 elem1 elem1 elem1 elem1" "elem2 elem3 elem4 elem5 elem6" "elem7 elem7 elem7 elem7 elem7" "elem8 elem9 elem10 elem11 elem12" "elem13 elem13 elem13 elem13 elem13" "elem14 elem15 elem16 elem17 elem18" "elem19 elem19 elem19 elem19 elem19" "elem20 elem21 elem22 elem23 elem24" "elem25 elem25 elem25 elem25 elem25" "elem26 elem27 elem28 elem29 elem30";
+}
+
+.grid5__imagenes {
+  padding: 45px;
+  width: 350px;
+  height: 450px;
+  transition: transform 1s;
+}
+
+.grid5__tituloaccion {
+  grid-area: elem1;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid5__accion1 {
+  grid-area: elem2;
+}
+
+.grid5__accion1:hover {
+  transform: scale(1.1);
+}
+
+.grid5__accion2 {
+  grid-area: elem3;
+}
+
+.grid5__accion2:hover {
+  transform: scale(1.1);
+}
+
+.grid5__accion3 {
+  grid-area: elem4;
+}
+
+.grid5__accion3:hover {
+  transform: scale(1.1);
+}
+
+.grid5__accion4 {
+  grid-area: elem5;
+}
+
+.grid5__accion4:hover {
+  transform: scale(1.1);
+}
+
+.grid5__accion5 {
+  grid-area: elem6;
+}
+
+.grid5__accion5:hover {
+  transform: scale(1.1);
+}
+
+.grid5__titulocienciaficcion {
+  grid-area: elem7;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid5__cienciaficcion1 {
+  grid-area: elem8;
+}
+
+.grid5__cienciaficcion1:hover {
+  transform: scale(1.1);
+}
+
+.grid5__cienciaficcion2 {
+  grid-area: elem9;
+}
+
+.grid5__cienciaficcion2:hover {
+  transform: scale(1.1);
+}
+
+.grid5__cienciaficcion3 {
+  grid-area: elem10;
+}
+
+.grid5__cienciaficcion3:hover {
+  transform: scale(1.1);
+}
+
+.grid5__cienciaficcion4 {
+  grid-area: elem11;
+}
+
+.grid5__cienciaficcion4:hover {
+  transform: scale(1.1);
+}
+
+.grid5__cienciaficcion5 {
+  grid-area: elem12;
+}
+
+.grid5__cienciaficcion5:hover {
+  transform: scale(1.1);
+}
+
+.grid5__titulocomedia {
+  grid-area: elem13;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid5__comedia1 {
+  grid-area: elem14;
+}
+
+.grid5__comedia1:hover {
+  transform: scale(1.1);
+}
+
+.grid5__comedia2 {
+  grid-area: elem15;
+}
+
+.grid5__comedia2:hover {
+  transform: scale(1.1);
+}
+
+.grid5__comedia3 {
+  grid-area: elem16;
+}
+
+.grid5__comedia3:hover {
+  transform: scale(1.1);
+}
+
+.grid5__comedia4 {
+  grid-area: elem17;
+}
+
+.grid5__comedia4:hover {
+  transform: scale(1.1);
+}
+
+.grid5__comedia5 {
+  grid-area: elem18;
+}
+
+.grid5__comedia5:hover {
+  transform: scale(1.1);
+}
+
+.grid5__titulodrama {
+  grid-area: elem19;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid5__drama1 {
+  grid-area: elem20;
+}
+
+.grid5__drama1:hover {
+  transform: scale(1.1);
+}
+
+.grid5__drama2 {
+  grid-area: elem21;
+}
+
+.grid5__drama2:hover {
+  transform: scale(1.1);
+}
+
+.grid5__drama3 {
+  grid-area: elem22;
+}
+
+.grid5__drama3:hover {
+  transform: scale(1.1);
+}
+
+.grid5__drama4 {
+  grid-area: elem23;
+}
+
+.grid5__drama4:hover {
+  transform: scale(1.1);
+}
+
+.grid5__drama5 {
+  grid-area: elem24;
+}
+
+.grid5__drama5:hover {
+  transform: scale(1.1);
+}
+
+.grid5__tituloterror {
+  grid-area: elem25;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.grid5__terror1 {
+  grid-area: elem26;
+}
+
+.grid5__terror1:hover {
+  transform: scale(1.1);
+}
+
+.grid5__terror2 {
+  grid-area: elem27;
+}
+
+.grid5__terror2:hover {
+  transform: scale(1.1);
+}
+
+.grid5__terror3 {
+  grid-area: elem28;
+}
+
+.grid5__terror3:hover {
+  transform: scale(1.1);
+}
+
+.grid5__terror4 {
+  grid-area: elem29;
+}
+
+.grid5__terror4:hover {
+  transform: scale(1.1);
+}
+
+.grid5__terror5 {
+  grid-area: elem30;
+}
+
+.grid5__terror5:hover {
+  transform: scale(1.1);
+}
+
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.div__contacto {
+  padding: 2rem;
+  text-align: start;
+}
+
+.div__contactotitulo {
+  font-size: 35px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section__container {
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  padding: 50px 0;
+}
+
+.section__containertitulo {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.section__containerul {
+  list-style: none;
+  text-align: right;
+}
+
+.section__containerli {
+  margin-bottom: 10px;
+}
+
+.section__containerlink {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+.section__accordion {
+  color: white;
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  padding: 50px;
+}
+
+.section__accordion-bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.registro__formulario {
+  background-color: black;
+  width: 550px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border: 3px solid #f6f5f7;
+  font-size: 20px;
+}
+
+.registro__caja {
+  background: #201e94;
+  background: linear-gradient(208deg, #201e94 30%, #1e8794 71%);
+  height: 150vh;
+  padding: 10rem;
+}
+
+.registro__logo {
+  width: 105px;
+  height: 105px;
+  margin: auto;
+  padding: 10px;
+}
+
+.registro__titulo1 {
+  margin-bottom: 45px;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.registro__titulo2 {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 25px;
+}
+
+.registro__link {
+  font-size: 20px;
+  position: relative;
+  left: 25px;
+}
+
+.registro__parrafo {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 15px;
+}
+
+.registro__casilla {
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.registro__boton1 {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  left: 170px;
+  background-color: burlywood;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+.registro__boton2 {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  left: 170px;
+  background-color: #f3f1ed;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.registro__recuerdame {
+  position: relative;
+  left: 180px;
+}
+
+.registro__checkbox {
+  position: relative;
+  left: 320px;
+  top: -20px;
+}
+
+.registro__span {
+  color: grey;
+  margin-left: 155px;
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    background: #030000;
+    background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+    font-family: 'Roboto', sans-serif;
+  }
+  .header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0a0908;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__open {
+    display: block;
     font-size: 25px;
-    text-align: left;
-}
-.section2{
-    border-top: 25px solid black;
+    color: #fcf6f6;
+    text-decoration: none;
+  }
+  .header__close {
+    display: block;
+  }
+  #lateral {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40%;
+    height: 30vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -300px;
+    transition: 1s;
+  }
+  #lateral:target {
+    left: 0;
+  }
+  .header__lenguaje {
+    height: 25px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 29px;
+    margin-bottom: 1rem;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__li {
+    font-size: 13px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fdfbfb;
+  }
+  .section1__imagen {
+    width: 100%;
+    height: 100%;
+  }
+  .section__titulo {
+    font-size: 20px;
+  }
+  .section1__parrafo {
+    font-size: 12px;
+  }
+  .section2 {
+    height: 100%;
+    border-top: 15px solid #3a2e2e;
     padding: 1rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(2fr);
-    grid-template-rows: repeat(3fr);
-    grid-template-areas:
-    "elem1 elem1"
-    "elem2 elem3"
-    "elem4 elem5";
-}
-.section2__titulo{
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5fr);
+    grid-template-areas: "elem1" "elem2" "elem4" "elem3" "elem5";
+  }
+  .section2__titulo {
     grid-area: elem1;
     text-align: center;
-    font-size: 50px;
-    margin: 4rem;
+    font-size: 15px;
+    margin: 2rem;
     text-decoration: wavy;
-}
-.section2__categoria1{
-    margin: 3rem;
+  }
+  .section2__categoria1 {
+    margin: 1rem;
     grid-area: elem2;
     text-align: center;
-    font-size: 35px;
+    font-size: 14px;
+    text-decoration: underline 2px white;
     background-color: rgba(0, 0, 0, 0.5);
-}
-.section2__categoria2{
-    margin: 3rem;
+  }
+  .section2__categoria2 {
+    margin: 1rem;
     grid-area: elem3;
     text-align: center;
-    font-size: 35px;
+    font-size: 14px;
+    text-decoration: underline 2px white;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.section2__div1{
-    height: 500px;
-    width: 700px;
+  }
+  .section2__div1 {
+    width: 100%;
+    height: 200px;
     margin: auto;
     grid-area: elem4;
-    text-align: center;
     border-radius: 5px;
     border: 2px double white;
     background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
     transition: 1s;
-}
-.section2__div1:hover{
+  }
+  .section2__div1:hover {
     transform: scale(1.2);
-}
-.section2__div2{
-    height: 500px;
-    width: 700px;
+  }
+  .section2__div2 {
+    width: 100%;
+    height: 200px;
     margin: auto;
     grid-area: elem5;
-    text-align: center;
     border-radius: 5px;
     border: 2px double white;
     background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
     transition: 1s;
-}
-.section2__div2:hover{
+  }
+  .section2__div2:hover {
     transform: scale(1.2);
-}
-.section3{
-    border: 2px black solid;
+  }
+  .section3 {
     width: 100%;
     min-height: 400px;
     background-color: white;
     color: black;
     padding: 50px;
-}
-.section3__imagen{
-    margin-left: 55px;
-    width: 300px;
-    height: 300px;
-}
-.section3__titulo{
+  }
+  .section3__imagen {
+    margin-left: 25px;
+    width: 150px;
+    height: 150px;
+  }
+  .section3__titulo {
     text-align: center;
-    font-size: 35px;
-}
-.section3__parrafo{
+    font-size: 25px;
+  }
+  .section3__parrafo {
     text-align: center;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.section4{
-    height: 100vh;
-    margin-bottom: 5rem;
+  }
+  .section4 {
+    height: 150vh;
     border-top: 15px solid black;
     align-content: space-around;
-    background: rgb(3,0,0);
-    background: linear-gradient(180deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    background: #030000;
+    background: linear-gradient(180deg, #030000 30%, #1e8394 76%);
     display: grid;
-    grid-template-rows: repeat(200px 200px);
-    grid-template-columns:repeat(25px 50px 25px) ;
-    grid-template-areas: 
-    "elem1 elem2 elem3"
-    "elem4 elem4 elem4";
-}
-.section4__div1{
+    grid-template-rows: repeat(4fr);
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "elem1" "elem2"  "elem3" "elem4";
+  }
+  .section4__div1 {
     grid-area: elem1;
-    width: 350px;
-    min-height: 300px;
+    width: 200px;
+    min-height: 20px;
     padding: 1rem;
     margin: auto;
-    border: 9px outset darkturquoise;
-    border-bottom: none;
-    background-color: rgb(27, 26, 26);
-}
-
-.section4__div2{
+    border: 9px outset white;
+    border-radius: 10px;
+    background: #cfbdbd;
+    background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+    color: black;
+  }
+  .section4__div1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .section4__div2 {
+    margin-bottom: 5px;
     grid-area: elem2;
-    width: 350px;
-    min-height: 300px;
+    width: 200px;
+    min-height: 20px;
     padding: 1rem;
     margin: auto;
-    border: 9px outset midnightblue;
-    border-bottom: none;
-    background-color: rgb(27, 26, 26);
-}
-
-.section4__div3{
+    border: 9px outset #494848;
+    border-radius: 10px;
+    background: #cfbdbd;
+    background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+    color: black;
+  }
+  .section4__div2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .section4__div3 {
+    margin-bottom: 5px;
     grid-area: elem3;
-    width: 350px;
-    min-height: 300px;
+    width: 200px;
+    min-height: 20px;
     padding: 1rem;
     margin: auto;
-    border: 9px outset darkslateblue;
-    border-bottom: none;
-    background-color: rgb(27, 26, 26);
-}
-.section4__divtitulo{
+    border: 9px outset black;
+    border-radius: 10px;
+    background: #cfbdbd;
+    background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
+    color: black;
+  }
+  .section4__div3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .section4__divtitulo {
     color: black;
     text-decoration: underline;
-    font-size:45px ;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.section4__divparrafo{
-    font-size:20px ;
+  }
+  .section4__divparrafo {
+    font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.section4__span{
+  }
+  .section4__span {
     grid-area: elem4;
     text-align: center;
-    font-size: 15px;
-}
-.section4__buttom{
-    margin-bottom: 0;
+    font-size: 9px;
+    padding: 5px;
+  }
+  .section4__buttom {
     width: 100%;
-    background-color: blue;
+    height: 45px;
+    background-color: #3b3b80;
     color: white;
     padding: 15px;
     border-radius: 7px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-}
-.footer__section{
+    font-size: 12px;
+  }
+  .footer__section {
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(12, 8, 8);
-}
-.footer__section--logo{
-    width: 150px;
-    height: 50px;
-}
-.footer__section--span{
-    font-size: 10px;
-}
-
-.footer__section--ul{
+    background-color: #0c0808;
+  }
+  .footer__section--logo {
+    width: 70px;
+    height: 30px;
+  }
+  .footer__section--span {
+    font-size: 9px;
+    padding: 10px;
+  }
+  .footer__section--ul {
     width: 100%;
     height: 100%;
-    padding-right: 50px;
     display: flex;
     flex-direction: row;
     list-style: none;
-    
-}
-.footer__section--link{
-    text-decoration: none;
-    font-size: 30px;
     margin-left: 10px;
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------REGISTRO-------------------------------------- */
-
-.registro__formulario{
-  background-color: black;
-    width: 600px;
-    height: 750px;
+  }
+  .footer__section--link {
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------REGISTRO-------------------------------------- */
+  .registro__formulario {
+    background-color: black;
+    width: 300px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    margin:auto;
+    justify-content: center;
+    margin: 0;
     color: white;
-    border: 3px solid rgb(246, 245, 247);
-    font-size: 20px;  
-}
-
-.registro__caja{
-    background: rgb(32,30,148);
-    background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-    height: 150vh; 
-    padding: 10rem;
-}
-.registro__logo{
-    width: 105px;
-    height: 105px;
+    border: 3px solid #f6f5f7;
+    font-size: 10px;
     margin: auto;
-}
-.registro__titulo1{
-    margin-bottom: 45px;
-    font-size: 35px;
+  }
+  .registro__caja {
+    background: #201e94;
+    background: linear-gradient(208deg, #201e94 30%, #1e8794 71%);
+    height: 100vh;
+    padding: 10px;
+    padding-top: 5rem;
+  }
+  .registro__logo {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .registro__titulo1 {
+    margin-bottom: 15px;
+    font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-    .registro__titulo2{
-        font-size:20px ;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-left: 25px;
-    }
-    .registro__link{
-        font-size: 20px;
-        position: relative;
-        left: 25px;
-    }
-    .registro__parrafo{
-        font-size: 18px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 15px;
-    }
-    .registro__casilla{
-        width: 90%;
-        height: 50px;
-        border-radius: 5px;
-        margin: auto;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .registro__boton1{
-        width: 200px;
-        height: 50px;
-        position: relative;
-        left: 200px;
-        background-color: burlywood;
-        border-radius: 3px;
-        margin-top: 15px;
-    }
-    .registro__boton2{
-        width: 200px;
-        height: 50px; 
-        position: relative;
-        left: 200px;
-        background-color: rgb(243, 241, 237);
-        border-radius: 3px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-    .registro__recuerdame{
+  }
+  .registro__titulo2 {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+  }
+  .registro__link {
+    font-size: 10px;
     position: relative;
-    left: 200px;
-    }
-    .registro__checkbox{
+    left: 25px;
+  }
+  .registro__parrafo {
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 15px;
+  }
+  .registro__casilla {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .registro__boton1 {
+    width: 150px;
+    height: 40px;
     position: relative;
-    left: 340px;
-    top: -20px;
-    }
-    .registro__span{
-        color: grey;
-        margin-left: 185px;
-    }
-
-    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA SERIES------------------------------- */
-
-    .grid4__section{
+    left: 70px;
+    background-color: burlywood;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+  .registro__boton2 {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 70px;
+    background-color: #f3f1ed;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .registro__recuerdame {
+    position: relative;
+    left: 15px;
+  }
+  .registro__checkbox {
+    position: relative;
+    left: 80px;
+    top: -17px;
+  }
+  .registro__span {
+    color: grey;
+    margin-left: 85px;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA SERIES------------------------------- */
+  .grid4__section {
     width: 100%;
-    height: 350vh
-    }
-    .grid4{
-     display: grid;
-     grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
-     grid-template-columns: 300px 300px 300px 300px 300px;
-     grid-template-areas:
-     "elem1 elem1 elem1 elem1 elem1"
-     "elem2 elem3 elem4 elem5 elem6"
-     "elem7 elem7 elem7 elem7 elem7"
-     "elem8 elem9 elem10 elem11 elem12"
-     "elem13 elem13 elem13 elem13 elem13"
-     "elem14 elem15 elem16 elem17 elem18"
-     "elem19 elem19 elem19 elem19 elem19"
-     "elem20 elem21 elem22 elem23 elem24"
-     "elem25 elem25 elem25 elem25 elem25"
-     "elem26 elem27 elem28 elem29 elem30";
-     }
-     .grid4__imagenes{
-        padding: 45px;   
-        width: 350px;
-        height: 450px;
-        transition: transform 1s;
-        }
-    .grid4__tituloaccion{
-    grid-area: elem1;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__accion1{
-    grid-area: elem2;
-    }
-    .grid4__accion1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion2{
-    grid-area: elem3;
-    }
-    .grid4__accion2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion3{
-    grid-area: elem4;
-   }
-    .grid4__accion3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion4{
-    grid-area: elem5;
-    }
-    .grid4__accion4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion5{
-    grid-area: elem6;
-    }
-    .grid4__accion5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulocienciaficcion{
-    grid-area: elem7;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__cienciaficcion1{
-    grid-area: elem8;
-    }
-    .grid4__cienciaficcion1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion2{
-    grid-area: elem9;
-    }
-    .grid4__cienciaficcion2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion3{
-    grid-area: elem10;
-    }
-    .grid4__cienciaficcion3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion4{
-    grid-area: elem11;
-    }
-    .grid4__cienciaficcion4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion5{
-    grid-area: elem12;
-    }
-    .grid4__cienciaficcion5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulocomedia{
-    grid-area: elem13;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__comedia1{
-        grid-area: elem14;
-    }
-    .grid4__comedia1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia2{
-        grid-area: elem15;
-    }
-    .grid4__comedia2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia3{
-        grid-area: elem16;
-    }
-    .grid4__comedia3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia4{
-        grid-area: elem17;
-    }
-    .grid4__comedia4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia5{
-        grid-area: elem18;
-    }
-    .grid4__comedia5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulodrama{
-        grid-area: elem19;
-        font-size:50px;
-        margin: 5px;
-        padding: 25px;
-    }
-    .grid4__drama1{
-        grid-area: elem20;
-    }
-    .grid4__drama1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama2{
-        grid-area: elem21;
-    }
-    .grid4__drama2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama3{
-        grid-area: elem22;
-    }
-    .grid4__drama3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama4{
-        grid-area: elem23;
-    }
-    .grid4__drama4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama5{
-        grid-area: elem24;
-    }
-    .grid4__drama5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__tituloterror{
-        grid-area: elem25;
-        font-size:50px;
-        margin: 5px;
-        padding: 25px;
-    }
-    .grid4__terror1{
-        grid-area: elem26;
-    }
-    .grid4__terror1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror2{
-        grid-area: elem27;
-    }
-    .grid4__terror2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror3{
-        grid-area: elem28;
-    }
-    .grid4__terror3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror4{
-        grid-area: elem29;
-    }
-    .grid4__terror4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror5{
-        grid-area: elem30;
-    }
-    .grid4__terror5:hover{
-        transform:scale(1.1)
-    }
-
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA PELICULAS---------------------------------- */
-
-.grid5__section{
-    width: 100%;
-    height: 350vh
-    }
-   .grid5{
+    height: 250vh;
+  }
+  .grid4 {
     display: grid;
     grid-template-rows: 100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
     grid-template-columns: 300px 300px 300px 300px 300px;
-    grid-template-areas:
-    "elem1 elem1 elem1 elem1 elem1"
-    "elem2 elem3 elem4 elem5 elem6"
-    "elem7 elem7 elem7 elem7 elem7"
-    "elem8 elem9 elem10 elem11 elem12"
-    "elem13 elem13 elem13 elem13 elem13"
-    "elem14 elem15 elem16 elem17 elem18"
-    "elem19 elem19 elem19 elem19 elem19"
-    "elem20 elem21 elem22 elem23 elem24"
-    "elem25 elem25 elem25 elem25 elem25"
-    "elem26 elem27 elem28 elem29 elem30";
-    }
-    .grid5__imagenes{
-        padding: 45px;   
-        width: 350px;
-        height: 450px;
-        transition: transform 1s;
-    }
-.grid5__tituloaccion{
+    grid-template-areas: "elem1 elem1 elem1 elem1 elem1" "elem2 elem3 elem4 elem5 elem6" "elem7 elem7 elem7 elem7 elem7" "elem8 elem9 elem10 elem11 elem12" "elem13 elem13 elem13 elem13 elem13" "elem14 elem15 elem16 elem17 elem18" "elem19 elem19 elem19 elem19 elem19" "elem20 elem21 elem22 elem23 elem24" "elem25 elem25 elem25 elem25 elem25" "elem26 elem27 elem28 elem29 elem30";
+  }
+  .grid4__tituloaccion {
     grid-area: elem1;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-}
-.grid5__accion1{
+    font-size: 50px;
+  }
+  .grid4__imagenes {
+    width: 100px;
+    height: 200px;
+    transition: transform 1s;
+  }
+  .grid4__accion1 {
     grid-area: elem2;
-}
-.grid5__accion1:hover{
-    transform:scale(1.1)
-}
-.grid5__accion2{
+  }
+  .grid4__accion1:hover {
+    transform: scale(1.1);
+  }
+  .grid4__accion2 {
     grid-area: elem3;
-}
-.grid5__accion2:hover{
-    transform:scale(1.1)
-}
-.grid5__accion3{
+  }
+  .grid4__accion2:hover {
+    transform: scale(1.1);
+  }
+  .grid4__accion3 {
     grid-area: elem4;
-}
-.grid5__accion3:hover{
-    transform:scale(1.1)
-}
-.grid5__accion4{
+  }
+  .grid4__accion3:hover {
+    transform: scale(1.1);
+  }
+  .grid4__accion4 {
     grid-area: elem5;
-}
-.grid5__accion4:hover{
-    transform:scale(1.1)
-}
-.grid5__accion5{
+  }
+  .grid4__accion4:hover {
+    transform: scale(1.1);
+  }
+  .grid4__accion5 {
     grid-area: elem6;
-}
-.grid5__accion5:hover{
-    transform:scale(1.1)
-}
-.grid5__titulocienciaficcion{
+  }
+  .grid4__accion5:hover {
+    transform: scale(1.1);
+  }
+  .grid4__titulocienciaficcion {
     grid-area: elem7;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-}
-.grid5__cienciaficcion1{
+    font-size: 50px;
+  }
+  .grid4__cienciaficcion1 {
     grid-area: elem8;
-}
-.grid5__cienciaficcion1:hover{
-    transform:scale(1.1)
-}
-.grid5__cienciaficcion2{
+  }
+  .grid4__cienciaficcion1:hover {
+    transform: scale(1.1);
+  }
+  .grid4__cienciaficcion2 {
     grid-area: elem9;
-}
-.grid5__cienciaficcion2:hover{
-    transform:scale(1.1)
-}
-.grid5__cienciaficcion3{
+  }
+  .grid4__cienciaficcion2:hover {
+    transform: scale(1.1);
+  }
+  .grid4__cienciaficcion3 {
     grid-area: elem10;
-}
-.grid5__cienciaficcion3:hover{
-    transform:scale(1.1)
-}
- .grid5__cienciaficcion4{
+  }
+  .grid4__cienciaficcion3:hover {
+    transform: scale(1.1);
+  }
+  .grid4__cienciaficcion4 {
     grid-area: elem11;
-}
-.grid5__cienciaficcion4:hover{
-    transform:scale(1.1)
-}
- .grid5__cienciaficcion5{
+  }
+  .grid4__cienciaficcion4:hover {
+    transform: scale(1.1);
+  }
+  .grid4__cienciaficcion5 {
     grid-area: elem12;
-}
-.grid5__cienciaficcion5:hover{
-    transform:scale(1.1)
-}
- .grid5__titulocomedia{
+  }
+  .grid4__cienciaficcion5:hover {
+    transform: scale(1.1);
+  }
+  .grid4__titulocomedia {
     grid-area: elem13;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
+    font-size: 50px;
   }
-  .grid5__comedia1{
+  .grid4__comedia1 {
     grid-area: elem14;
-}
-.grid5__comedia1:hover{
-    transform:scale(1.1)
-}
-  .grid5__comedia2{
-   grid-area: elem15;
-}
-.grid5__comedia2:hover{
-    transform:scale(1.1)
-}
-  .grid5__comedia3{
-   grid-area: elem16;
-}
-.grid5__comedia3:hover{
-    transform:scale(1.1)
-}
-  .grid5__comedia4{
-   grid-area: elem17;
-}
-.grid5__comedia4:hover{
-    transform:scale(1.1)
-}
-  .grid5__comedia5{
-   grid-area: elem18;
-}
-.grid5__comedia5:hover{
-    transform:scale(1.1)
-}
-  .grid5__titulodrama{
-   grid-area: elem19;
-   font-size:50px;
-   margin: 5px;
-   padding: 25px;
-}
-  .grid5__drama1{
-   grid-area: elem20;
-}
-.grid5__drama1:hover{
-    transform:scale(1.1)
-}
-  .grid5__drama2{
-   grid-area: elem21;
-}
-.grid5__drama2:hover{
-    transform:scale(1.1)
-}
-  .grid5__drama3{
-   grid-area: elem22;
-}
-.grid5__drama3:hover{
-    transform:scale(1.1)
-}
-  .grid5__drama4{
-   grid-area: elem23;
-}
-.grid5__drama4:hover{
-    transform:scale(1.1)
-}
-  .grid5__drama5{
-   grid-area: elem24;
-}
-.grid5__drama5:hover{
-    transform:scale(1.1)
-}
-  .grid5__tituloterror{
-   grid-area: elem25;
-   font-size:50px;
-   margin: 5px;
-   padding: 25px;
   }
-  .grid5__terror1{
-   grid-area: elem26;
-}
-.grid5__terror1:hover{
-    transform:scale(1.1)
-}
-  .grid5__terror2{
-   grid-area: elem27;
-}
-.grid5__terror2:hover{
-    transform:scale(1.1)
-}
-  .grid5__terror3{
-   grid-area: elem28;
-}
-.grid5__terror3:hover{
-    transform:scale(1.1)
-}
-  .grid5__terror4{
-   grid-area: elem29;
-}
-.grid5__terror4:hover{
-    transform:scale(1.1)
-}
-  .grid5__terror5{
-   grid-area: elem30;
-}
-.grid5__terror5:hover{
-    transform:scale(1.1)
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA CONTACTO------------------------------------ */
-body{
-    color: white;
+  .grid4__comedia1:hover {
+    transform: scale(1.1);
+  }
+  .grid4__comedia2 {
+    grid-area: elem15;
+  }
+  .grid4__comedia2:hover {
+    transform: scale(1.1);
+  }
+  .grid4__comedia3 {
+    grid-area: elem16;
+  }
+  .grid4__comedia3:hover {
+    transform: scale(1.1);
+  }
+  .grid4__comedia4 {
+    grid-area: elem17;
+  }
+  .grid4__comedia4:hover {
+    transform: scale(1.1);
+  }
+  .grid4__comedia5 {
+    grid-area: elem18;
+  }
+  .grid4__comedia5:hover {
+    transform: scale(1.1);
+  }
+  .grid4__titulodrama {
+    grid-area: elem19;
+    font-size: 50px;
+  }
+  .grid4__drama1 {
+    grid-area: elem20;
+  }
+  .grid4__drama1:hover {
+    transform: scale(1.1);
+  }
+  .grid4__drama2 {
+    grid-area: elem21;
+  }
+  .grid4__drama2:hover {
+    transform: scale(1.1);
+  }
+  .grid4__drama3 {
+    grid-area: elem22;
+  }
+  .grid4__drama3:hover {
+    transform: scale(1.1);
+  }
+  .grid4__drama4 {
+    grid-area: elem23;
+  }
+  .grid4__drama4:hover {
+    transform: scale(1.1);
+  }
+  .grid4__drama5 {
+    grid-area: elem24;
+  }
+  .grid4__drama5:hover {
+    transform: scale(1.1);
+  }
+  .grid4__tituloterror {
+    grid-area: elem25;
+    font-size: 50px;
+  }
+  .grid4__terror1 {
+    grid-area: elem26;
+  }
+  .grid4__terror1:hover {
+    transform: scale(1.1);
+  }
+  .grid4__terror2 {
+    grid-area: elem27;
+  }
+  .grid4__terror2:hover {
+    transform: scale(1.1);
+  }
+  .grid4__terror3 {
+    grid-area: elem28;
+  }
+  .grid4__terror3:hover {
+    transform: scale(1.1);
+  }
+  .grid4__terror4 {
+    grid-area: elem29;
+  }
+  .grid4__terror4:hover {
+    transform: scale(1.1);
+  }
+  .grid4__terror5 {
+    grid-area: elem30;
+  }
+  .grid4__terror5:hover {
+    transform: scale(1.1);
+  }
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA PELICULAS---------------------------------- */
+  .grid5__section {
     width: 100%;
+    min-height: 100vh;
+  }
+  .grid5 {
     height: 100%;
-    font-size: 15px;
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
-    font-family: 'Roboto', sans-serif;
- }
-
-.div__contacto{
-padding: 2rem;
-text-align: start;
-}
-.div__contactotitulo{
-font-size: 35px;
-color:white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.section__container{
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
-    padding: 50px 0;
-}
-.section__containertitulo{
-    color:white;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 50px 250px 50px 250px 50px 250px 50px 250px 50px 250px;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-areas: "elem1 elem1 elem1 elem1 elem1" "elem2 elem3 elem4 elem5 elem6" "elem7 elem7 elem7 elem7 elem7" "elem8 elem9 elem10 elem11 elem12" "elem13 elem13 elem13 elem13 elem13" "elem14 elem15 elem16 elem17 elem18" "elem19 elem19 elem19 elem19 elem19" "elem20 elem21 elem22 elem23 elem24" "elem25 elem25 elem25 elem25 elem25" "elem26 elem27 elem28 elem29 elem30";
+  }
+  .grid5__tituloaccion {
+    grid-area: elem1;
+    font-size: 20px;
+  }
+  .grid5__imagenes {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    transition: transform 1s;
+  }
+  .grid5__accion1 {
+    grid-area: elem2;
+  }
+  .grid5__accion1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__accion2 {
+    grid-area: elem3;
+  }
+  .grid5__accion2:hover {
+    transform: scale(1.1);
+  }
+  .grid5__accion3 {
+    grid-area: elem4;
+  }
+  .grid5__accion3:hover {
+    transform: scale(1.1);
+  }
+  .grid5__accion4 {
+    grid-area: elem5;
+  }
+  .grid5__accion4:hover {
+    transform: scale(1.1);
+  }
+  .grid5__accion5 {
+    grid-area: elem6;
+  }
+  .grid5__accion5:hover {
+    transform: scale(1.1);
+  }
+  .grid5__titulocienciaficcion {
+    grid-area: elem7;
+    font-size: 20px;
+  }
+  .grid5__cienciaficcion1 {
+    grid-area: elem8;
+  }
+  .grid5__cienciaficcion1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__cienciaficcion2 {
+    grid-area: elem9;
+  }
+  .grid5__cienciaficcion2:hover {
+    transform: scale(1.1);
+  }
+  .grid5__cienciaficcion3 {
+    grid-area: elem10;
+  }
+  .grid5__cienciaficcion3:hover {
+    transform: scale(1.1);
+  }
+  .grid5__cienciaficcion4 {
+    grid-area: elem11;
+  }
+  .grid5__cienciaficcion4:hover {
+    transform: scale(1.1);
+  }
+  .grid5__cienciaficcion5 {
+    grid-area: elem12;
+  }
+  .grid5__cienciaficcion5:hover {
+    transform: scale(1.1);
+  }
+  .grid5__titulocomedia {
+    grid-area: elem13;
+    font-size: 20px;
+  }
+  .grid5__comedia1 {
+    grid-area: elem14;
+  }
+  .grid5__comedia1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__comedia2 {
+    grid-area: elem15;
+  }
+  .grid5__comedia2:hover {
+    transform: scale(1.1);
+  }
+  .grid5__comedia3 {
+    grid-area: elem16;
+  }
+  .grid5__comedia3:hover {
+    transform: scale(1.1);
+  }
+  .grid5__comedia4 {
+    grid-area: elem17;
+  }
+  .grid5__comedia4:hover {
+    transform: scale(1.1);
+  }
+  .grid5__comedia5 {
+    grid-area: elem18;
+  }
+  .grid5__comedia5:hover {
+    transform: scale(1.1);
+  }
+  .grid5__titulodrama {
+    grid-area: elem19;
+    font-size: 20px;
+  }
+  .grid5__comedia1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__drama1 {
+    grid-area: elem20;
+  }
+  .grid5__drama1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__drama2 {
+    grid-area: elem21;
+  }
+  .grid5__drama2:hover {
+    transform: scale(1.1);
+  }
+  .grid5__drama3 {
+    grid-area: elem22;
+  }
+  .grid5__drama3:hover {
+    transform: scale(1.1);
+  }
+  .grid5__drama4 {
+    grid-area: elem23;
+  }
+  .grid5__drama4:hover {
+    transform: scale(1.1);
+  }
+  .grid5__drama5 {
+    grid-area: elem24;
+  }
+  .grid5__drama5:hover {
+    transform: scale(1.1);
+  }
+  .grid5__tituloterror {
+    grid-area: elem25;
+    font-size: 20px;
+  }
+  .grid5__terror1 {
+    grid-area: elem26;
+  }
+  .grid5__terror1:hover {
+    transform: scale(1.1);
+  }
+  .grid5__terror2 {
+    grid-area: elem27;
+  }
+  .grid5__terror2:hover {
+    transform: scale(1.1);
+  }
+  .grid5__terror3 {
+    grid-area: elem28;
+  }
+  .grid5__terror3:hover {
+    transform: scale(1.1);
+  }
+  .grid5__terror4 {
+    grid-area: elem29;
+  }
+  .grid5__terror4:hover {
+    transform: scale(1.1);
+  }
+  .grid5__terror5 {
+    grid-area: elem30;
+  }
+  .grid5__terror5:hover {
+    transform: scale(1.1);
+  }
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA CONTACTO------------------------------------ */
+  .div__contacto {
+    padding: 2rem;
+    text-align: start;
+  }
+  .div__contactotitulo {
+    font-size: 20px;
+    color: #faf2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .section__container {
+    background: #030000;
+    background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+    padding: 35px;
+  }
+  .section__containertitulo {
+    color: white;
     font-size: 28px;
     margin-bottom: 2rem;
-    text-align: right;
-   
-}
-.section__containerul{
+    text-align: center;
+  }
+  .section__containerul {
     list-style: none;
-    text-align: right;
-}
-.section__containerli{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .section__containerli {
     margin-bottom: 10px;
-}
-.section__containerlink{
+  }
+  .section__containerlink {
     font-size: 13px;
     text-decoration: none;
     color: white;
-}
-.section__accordion{
+  }
+  .section__accordion {
     color: white;
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    background: #030000;
+    background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
     padding: 50px;
-}
-.section__accordion-bottom{
+  }
+  .section__accordion-bottom {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-
+  }
 }
-
- /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------VISTA MOBILE------------------------------------     */
-
-    @media screen and (max-width:700px) {  
-        *{
-            padding: 0%;
-            margin: 0;
-            box-sizing: border-box;
-         }
-         body{
-            color: white;
-            width: 100%;
-            height: 100%;
-            font-size: 10px;
-            background: rgb(3,0,0);
-            background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
-            font-family: 'Roboto', sans-serif;
-         }
-         .header{
-            width: 100%;
-            padding: 1rem;
-            background-color: rgb(10, 9, 8);
-            /* position: fixed;
-            z-index: 1; */
-            display:flex;
-            justify-content:space-between;
-         }  
-         .header__open{
-            display: block;
-            font-size: 25px;
-            color: rgb(252, 246, 246);
-            text-decoration:none;
-        }
-        .header__close{
-            display: block;
-        }
-        #lateral{
-            display: block;
-            background-color:rgba(0, 0, 0, 0.7);
-            width: 40%;
-            height: 30vh;
-            position: fixed;
-            z-index: 100;
-            top: 0;
-            left: -300px;
-            transition: 1s;
-            
-        }
-        #lateral:target{
-            left: 0;
-        }
-        .header__lenguaje{
-            height: 25px;
-            width: 70px;
-            margin-top: 20px;
-            margin-left: 29px;
-            margin-bottom: 1rem;
-           } 
-         .header__logo{
-            width: 50x;
-            height: 50px; 
-         }
-         .header__nav{
-             display: flex;
-             flex-direction:column;
-             align-items: center;
-         }
-         .header__ul{
-            height: 100%;
-            width: 100%;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-         }
-         .header__li{
-             font-size: 13px;
-            text-decoration: none;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: rgb(253, 251, 251);
-         } 
-        
-         .section1{
-             width: 100%;
-             height: 100%;
-             position: relative;
-         }   
-        .section1__imagen{
-          width: 100%;
-          height: 100%;
-          margin-bottom: 10rem;
-        }
-        .section1__titulo{
-            position: absolute;
-            top: 200px;
-            left: 1rem;
-            font-size: 15px;
-            font-family: fantasy;
-            color: rgb(241, 236, 236);
-        }
-        .section1__div{
-            position: absolute;
-            width: 200px;
-            min-height: 100px;
-            top: 220px;
-            left: 1rem;
-            padding: auto;
-            border-bottom: 1px solid black;
-            border-top:1px solid black ;
-        }
-        .section1_divparrafo{
-            color: rgb(250, 243, 243);
-            font-size: 11px;
-            text-align: left;
-        }
-        .section2{
-            height: 100%;
-            border-top: 15px solid rgb(58, 46, 46);
-            padding: 1rem;
-            margin-bottom: 2rem;
-            display: grid;
-            grid-template-columns: repeat(1fr);
-            grid-template-rows: repeat(5fr);
-            grid-template-areas:
-            "elem1"
-            "elem2"
-            "elem4"
-            "elem3"
-            "elem5";
-        }
-        .section2__titulo{
-            grid-area: elem1;
-            text-align: center;
-            font-size: 15px;
-            margin: 2rem;
-            text-decoration: wavy;
-        }
-        .section2__categoria1{
-            margin: 1rem;
-            grid-area: elem2;
-            text-align: center;
-            font-size: 14px;
-            text-decoration: underline 2px white;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .section2__categoria2{
-            margin: 1rem;
-            grid-area: elem3;
-            text-align: center;
-            font-size: 14px;
-            text-decoration: underline 2px white;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .section2__div1{
-            width: 100%;
-            height: 200px;
-            margin:auto ;
-            grid-area: elem4;
-            border-radius: 5px;
-            border: 2px double white;
-            background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
-            transition: 1s;
-        }
-        .section2__div1:hover{
-            transform: scale(1.2);
-        }
-        .section2__div2{
-            width: 100%;
-            height: 200px;
-            margin: auto;
-            grid-area: elem5;
-            border-radius: 5px;
-            border: 2px double white;
-            background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
-            transition: 1s;
-        }
-        .section2__div2:hover{
-            transform: scale(1.2);
-        }
-        .section3{
-            width: 100%;
-            min-height: 400px;
-            background-color: white;
-            color: black;
-            padding: 50px;
-        }
-        .section3__imagen{
-            margin-left: 25px;
-            width: 150px;
-            height: 150px;
-        }
-        .section3__titulo{
-            text-align: center;
-            font-size: 25px;
-        }
-        .section3__parrafo{
-            text-align: center;
-            font-size: 12px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .section4{
-            height: 150vh;
-            margin-bottom: 5rem;
-            border-top: 15px solid black;
-            align-content: space-around;
-            background: rgb(3,0,0);
-            background: linear-gradient(180deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
-            display: grid;
-            grid-template-rows: repeat(4fr);
-            grid-template-columns:repeat(1fr) ;
-            grid-template-areas:
-            "elem1"
-            "elem2" 
-            "elem3"
-            "elem4";
-        }
-        .section4__div1{
-            grid-area: elem1;
-            width: 200px;
-            min-height: 20px;
-            padding: 1rem;
-            margin: auto;
-            border: 9px outset darkturquoise;
-            background-color: rgb(27, 26, 26);
-        }
-        
-        .section4__div2{
-            grid-area: elem2;
-            width: 200px;
-            min-height: 20px;
-            padding: 1rem;
-            margin: auto;
-            border: 9px outset midnightblue;
-            background-color: rgb(27, 26, 26);
-        }
-        
-        .section4__div3{
-            grid-area: elem3;
-            width: 200px;
-            min-height: 20px;
-            padding: 1rem;
-            margin: auto;
-            border: 9px outset darkslateblue;
-            background-color: rgb(27, 26, 26);
-        }
-        .section4__divtitulo{
-            color: black;
-            text-decoration: underline;
-            font-size:10px ;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .section4__divparrafo{
-            font-size:12px ;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .section4__span{
-            grid-area: elem4;
-            text-align: center;
-            font-size: 9px;
-            padding: 5px;
-        }
-        .footer__section{
-            width: 100%;
-            height: 100%;
-            padding-top: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgb(12, 8, 8);
-        }
-        .footer__section--logo{
-            width: 70px;
-            height: 30px;
-        }
-        .footer__section--span{
-            font-size:9px;
-        }
-        
-        .footer__section--ul{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            margin-right: 35px;
-            margin-bottom: 0px;
-        }
-        .footer__section--link{
-            margin:auto;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        
-        /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------REGISTRO-------------------------------------- */
-        
-        .registro__formulario{
-          background-color: black;
-            width: 300px;
-            height: 450px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;  
-            margin:0;
-            color: white;
-            border: 3px solid rgb(246, 245, 247);
-            font-size: 10px; 
-            margin: auto; 
-        }
-        
-        .registro__caja{
-            background: rgb(32,30,148);
-            background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-            height: 100vh; 
-            padding:10px;
-            padding-top: 5rem;
-        }
-        .registro__logo{
-            width: 50px;
-            height: 50px;
-            margin: auto;
-            margin-top: 5px;
-        }
-        .registro__titulo1{
-            margin-bottom: 15px;
-            font-size: 25px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-align: center;
-        }
-            .registro__titulo2{
-                font-size:12px ;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                margin-left: 20px;
-            }
-            .registro__link{
-                font-size: 10px;
-                position: relative;
-                left: 25px;
-            }
-            .registro__parrafo{
-                font-size: 10px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                margin: 15px;
-            }
-            .registro__casilla{
-                width: 90%;
-                height: 50px;
-                border-radius: 5px;
-                margin: auto;
-                margin-bottom: 5px;
-                margin-top: 5px;
-            }
-            .registro__boton1{
-                width: 150px;
-                height: 40px;
-                position: relative;
-                left: 70px;
-                background-color: burlywood;
-                border-radius: 3px;
-                margin-top: 15px;
-            }
-            .registro__boton2{
-                width: 150px;
-                height: 40px; 
-                position: relative;
-                left: 70px;
-                background-color: rgb(243, 241, 237);
-                border-radius: 3px;
-                margin-top: 5px;
-                margin-bottom: 15px;
-            }
-            .registro__recuerdame{
-            position: relative;
-            left: 15px;
-            }
-            .registro__checkbox{
-            position: relative;
-            left: 80px;
-            top: -17px;
-            }
-            .registro__span{
-                color: grey;
-                margin-left: 85px;
-            }
-        
-            /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA SERIES------------------------------- */
-        
-            .grid4__section{
-            width: 100%;
-            height: 250vh
-            }
-            .grid4{
-             display: grid;
-             grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
-             grid-template-columns: 300px 300px 300px 300px 300px;
-             grid-template-areas:
-             "elem1 elem1 elem1 elem1 elem1"
-             "elem2 elem3 elem4 elem5 elem6"
-             "elem7 elem7 elem7 elem7 elem7"
-             "elem8 elem9 elem10 elem11 elem12"
-             "elem13 elem13 elem13 elem13 elem13"
-             "elem14 elem15 elem16 elem17 elem18"
-             "elem19 elem19 elem19 elem19 elem19"
-             "elem20 elem21 elem22 elem23 elem24"
-             "elem25 elem25 elem25 elem25 elem25"
-             "elem26 elem27 elem28 elem29 elem30";
-             }
-            .grid4__tituloaccion{
-            grid-area: elem1;
-            font-size:50px;
-            }
-            .grid4__imagenes{
-            width: 100px;
-            height: 200px;
-            transition: transform 1s;
-            }
-            .grid4__accion1{
-            grid-area: elem2;
-            }
-            .grid4__accion1:hover{
-                transform:scale(1.1)
-            }
-            .grid4__accion2{
-            grid-area: elem3;
-            }
-            .grid4__accion2:hover{
-                transform:scale(1.1)
-            }
-            .grid4__accion3{
-            grid-area: elem4;
-           }
-            .grid4__accion3:hover{
-                transform:scale(1.1)
-            }
-            .grid4__accion4{
-            grid-area: elem5;
-            }
-            .grid4__accion4:hover{
-                transform:scale(1.1)
-            }
-            .grid4__accion5{
-            grid-area: elem6;
-            }
-            .grid4__accion5:hover{
-                transform:scale(1.1)
-            }
-            .grid4__titulocienciaficcion{
-            grid-area: elem7;
-            font-size:50px;
-            }
-            .grid4__cienciaficcion1{
-            grid-area: elem8;
-            }
-            .grid4__cienciaficcion1:hover{
-                transform:scale(1.1)
-            }
-            .grid4__cienciaficcion2{
-            grid-area: elem9;
-            }
-            .grid4__cienciaficcion2:hover{
-                transform:scale(1.1)
-            }
-            .grid4__cienciaficcion3{
-            grid-area: elem10;
-            }
-            .grid4__cienciaficcion3:hover{
-                transform:scale(1.1)
-            }
-            .grid4__cienciaficcion4{
-            grid-area: elem11;
-            }
-            .grid4__cienciaficcion4:hover{
-                transform:scale(1.1)
-            }
-            .grid4__cienciaficcion5{
-            grid-area: elem12;
-            }
-            .grid4__cienciaficcion5:hover{
-                transform:scale(1.1)
-            }
-            .grid4__titulocomedia{
-            grid-area: elem13;
-            font-size:50px;
-            }
-            .grid4__comedia1{
-                grid-area: elem14;
-            }
-            .grid4__comedia1:hover{
-                transform:scale(1.1)
-            }
-            .grid4__comedia2{
-                grid-area: elem15;
-            }
-            .grid4__comedia2:hover{
-                transform:scale(1.1)
-            }
-            .grid4__comedia3{
-                grid-area: elem16;
-            }
-            .grid4__comedia3:hover{
-                transform:scale(1.1)
-            }
-            .grid4__comedia4{
-                grid-area: elem17;
-            }
-            .grid4__comedia4:hover{
-                transform:scale(1.1)
-            }
-            .grid4__comedia5{
-                grid-area: elem18;
-            }
-            .grid4__comedia5:hover{
-                transform:scale(1.1)
-            }
-            .grid4__titulodrama{
-                grid-area: elem19;
-                font-size:50px;
-            }
-            .grid4__drama1{
-                grid-area: elem20;
-            }
-            .grid4__drama1:hover{
-                transform:scale(1.1)
-            }
-            .grid4__drama2{
-                grid-area: elem21;
-            }
-            .grid4__drama2:hover{
-                transform:scale(1.1)
-            }
-            .grid4__drama3{
-                grid-area: elem22;
-            }
-            .grid4__drama3:hover{
-                transform:scale(1.1)
-            }
-            .grid4__drama4{
-                grid-area: elem23;
-            }
-            .grid4__drama4:hover{
-                transform:scale(1.1)
-            }
-            .grid4__drama5{
-                grid-area: elem24;
-            }
-            .grid4__drama5:hover{
-                transform:scale(1.1)
-            }
-            .grid4__tituloterror{
-                grid-area: elem25;
-                font-size:50px;
-            }
-            .grid4__terror1{
-                grid-area: elem26;
-            }
-            .grid4__terror1:hover{
-                transform:scale(1.1)
-            }
-            .grid4__terror2{
-                grid-area: elem27;
-            }
-            .grid4__terror2:hover{
-                transform:scale(1.1)
-            }
-            .grid4__terror3{
-                grid-area: elem28;
-            }
-            .grid4__terror3:hover{
-                transform:scale(1.1)
-            }
-            .grid4__terror4{
-                grid-area: elem29;
-            }
-            .grid4__terror4:hover{
-                transform:scale(1.1)
-            }
-            .grid4__terror5{
-                grid-area: elem30;
-            }
-            .grid4__terror5:hover{
-                transform:scale(1.1)
-            }
-        
-        /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA PELICULAS---------------------------------- */
-        
-        .grid5__section{
-            width: 100%;
-            min-height: 100vh;
-            }
-           .grid5{
-            height: 100%;
-            overflow:auto;
-            display: grid;
-            grid-template-rows:  50px 250px 50px 250px 50px 250px 50px 250px 50px 250px;
-            grid-template-columns: 150px 150px 150px 150px 150px;
-            grid-template-areas:
-            "elem1 elem1 elem1 elem1 elem1"
-            "elem2 elem3 elem4 elem5 elem6"
-            "elem7 elem7 elem7 elem7 elem7"
-            "elem8 elem9 elem10 elem11 elem12"
-            "elem13 elem13 elem13 elem13 elem13"
-            "elem14 elem15 elem16 elem17 elem18"
-            "elem19 elem19 elem19 elem19 elem19"
-            "elem20 elem21 elem22 elem23 elem24"
-            "elem25 elem25 elem25 elem25 elem25"
-            "elem26 elem27 elem28 elem29 elem30";
-            }
-        .grid5__tituloaccion{
-        grid-area: elem1;
-        font-size:20px;
-        }
-        .grid5__imagenes{
-            padding: 5px;
-            width: 250px;
-            height: 250px;
-            transition: transform 1s;
-        }
-        .grid5__accion1{
-        grid-area: elem2;
-        }
-        .grid5__accion1:hover{
-            transform:scale(1.1)
-        }
-        .grid5__accion2{
-        grid-area: elem3;
-        }
-        .grid5__accion2:hover{
-            transform:scale(1.1)
-        }
-        .grid5__accion3{
-        grid-area: elem4;
-        }
-        .grid5__accion3:hover{
-            transform:scale(1.1)
-        }
-        .grid5__accion4{
-        grid-area: elem5;
-        }
-        .grid5__accion4:hover{
-            transform:scale(1.1)
-        }
-        .grid5__accion5{
-        grid-area: elem6;
-        }
-        .grid5__accion5:hover{
-            transform:scale(1.1)
-        }
-        .grid5__titulocienciaficcion{
-        grid-area: elem7;
-        font-size:20px;
-        }
-        .grid5__cienciaficcion1{
-        grid-area: elem8;
-        }
-        .grid5__cienciaficcion1:hover{
-            transform:scale(1.1)
-        }
-        .grid5__cienciaficcion2{
-        grid-area: elem9;
-        }
-        .grid5__cienciaficcion2:hover{
-            transform:scale(1.1)
-        }
-        .grid5__cienciaficcion3{
-        grid-area: elem10;
-        }
-        .grid5__cienciaficcion3:hover{
-            transform:scale(1.1)
-        }
-         .grid5__cienciaficcion4{
-          grid-area: elem11;
-        }
-        .grid5__cienciaficcion4:hover{
-            transform:scale(1.1)
-        }
-         .grid5__cienciaficcion5{
-          grid-area: elem12;
-        }
-        .grid5__cienciaficcion5:hover{
-            transform:scale(1.1)
-        }
-         .grid5__titulocomedia{
-          grid-area: elem13;
-          font-size:20px;
-          }
-          .grid5__comedia1{
-           grid-area: elem14;
-        }
-        .grid5__comedia1:hover{
-            transform:scale(1.1)
-        }
-          .grid5__comedia2{
-           grid-area: elem15;
-        }
-        .grid5__comedia2:hover{
-            transform:scale(1.1)
-        }
-          .grid5__comedia3{
-           grid-area: elem16;
-        }
-        .grid5__comedia3:hover{
-            transform:scale(1.1)
-        }
-          .grid5__comedia4{
-           grid-area: elem17;
-        }
-        .grid5__comedia4:hover{
-            transform:scale(1.1)
-        }
-          .grid5__comedia5{
-           grid-area: elem18;
-        }
-        .grid5__comedia5:hover{
-            transform:scale(1.1)
-        }
-          .grid5__titulodrama{
-           grid-area: elem19;
-           font-size:20px;
-        }
-        .grid5__comedia1:hover{
-            transform:scale(1.1)
-        }
-          .grid5__drama1{
-           grid-area: elem20;
-        }
-        .grid5__drama1:hover{
-            transform:scale(1.1)
-        }
-          .grid5__drama2{
-           grid-area: elem21;
-        }
-        .grid5__drama2:hover{
-            transform:scale(1.1)
-        }
-          .grid5__drama3{
-           grid-area: elem22;
-        }
-        .grid5__drama3:hover{
-            transform:scale(1.1)
-        }
-          .grid5__drama4{
-           grid-area: elem23;
-        }
-        .grid5__drama4:hover{
-            transform:scale(1.1)
-        }
-          .grid5__drama5{
-           grid-area: elem24;
-        }
-        .grid5__drama5:hover{
-            transform:scale(1.1)
-        }
-          .grid5__tituloterror{
-           grid-area: elem25;
-           font-size:20px;
-          }
-          .grid5__terror1{
-           grid-area: elem26;
-        }
-        .grid5__terror1:hover{
-            transform:scale(1.1)
-        }
-          .grid5__terror2{
-           grid-area: elem27;
-        }
-        .grid5__terror2:hover{
-            transform:scale(1.1)
-        }
-          .grid5__terror3{
-           grid-area: elem28;
-        }
-        .grid5__terror3:hover{
-            transform:scale(1.1)
-        }
-          .grid5__terror4{
-           grid-area: elem29;
-        }
-        .grid5__terror4:hover{
-            transform:scale(1.1)
-        }
-          .grid5__terror5{
-           grid-area: elem30;
-        }
-        .grid5__terror5:hover{
-            transform:scale(1.1)
-        }
-        
-        /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PAGINA CONTACTO------------------------------------ */
-        
-        .div__contacto{
-        padding: 2rem;
-        text-align: start;
-        }
-        .div__contactotitulo{
-        font-size: 20px;
-        color: rgb(250, 242, 242);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .div__contactoform{
-            position: relative;
-        }
-        .div__contactotextarea{
-        position: absolute;
-        bottom: -10rem;
-        left: 10px;
-        }
-        .div__contactoboton{
-            position: absolute;
-            bottom: -10rem;
-            left: 15rem;
-        }
-        .section__contacto{
-            margin-top: 12rem;
-            margin-bottom: 20px;
-        }
-        .section__contactotitulo{
-            font-size: 20px;
-            color: black;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .section__contacto--ul{
-            list-style: square;
-        }
-        .section__contacto--link{
-            text-decoration: none;
-            color: black;
-        }
-    }      
+/*# sourceMappingURL=styles.css.map */
