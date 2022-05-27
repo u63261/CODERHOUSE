@@ -1,206 +1,30 @@
-.grid4__section{
-    width: 100%;
-    height: 350vh
+
+.container__series{
+    width: $ancho;
+    background: $fondo-principal;
+    background: $fondo-principal2;
     }
-    .grid4{
-     display: grid;
-     grid-template-rows:  100px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
-     grid-template-columns: 300px 300px 300px 300px 300px;
-     grid-template-areas:
-     "elem1 elem1 elem1 elem1 elem1"
-     "elem2 elem3 elem4 elem5 elem6"
-     "elem7 elem7 elem7 elem7 elem7"
-     "elem8 elem9 elem10 elem11 elem12"
-     "elem13 elem13 elem13 elem13 elem13"
-     "elem14 elem15 elem16 elem17 elem18"
-     "elem19 elem19 elem19 elem19 elem19"
-     "elem20 elem21 elem22 elem23 elem24"
-     "elem25 elem25 elem25 elem25 elem25"
-     "elem26 elem27 elem28 elem29 elem30";
-     }
-     .grid4__imagenes{
-        padding: 45px;   
-        width: 350px;
-        height: 450px;
-        transition: transform 1s;
+        .container__titulo-series{
+            font-size:50px;
+            margin: 5px;
+            padding: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-    .grid4__tituloaccion{
-    grid-area: elem1;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__accion1{
-    grid-area: elem2;
-    }
-    .grid4__accion1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion2{
-    grid-area: elem3;
-    }
-    .grid4__accion2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion3{
-    grid-area: elem4;
-   }
-    .grid4__accion3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion4{
-    grid-area: elem5;
-    }
-    .grid4__accion4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__accion5{
-    grid-area: elem6;
-    }
-    .grid4__accion5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulocienciaficcion{
-    grid-area: elem7;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__cienciaficcion1{
-    grid-area: elem8;
-    }
-    .grid4__cienciaficcion1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion2{
-    grid-area: elem9;
-    }
-    .grid4__cienciaficcion2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion3{
-    grid-area: elem10;
-    }
-    .grid4__cienciaficcion3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion4{
-    grid-area: elem11;
-    }
-    .grid4__cienciaficcion4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__cienciaficcion5{
-    grid-area: elem12;
-    }
-    .grid4__cienciaficcion5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulocomedia{
-    grid-area: elem13;
-    font-size:50px;
-    margin: 5px;
-    padding: 25px;
-    }
-    .grid4__comedia1{
-        grid-area: elem14;
-    }
-    .grid4__comedia1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia2{
-        grid-area: elem15;
-    }
-    .grid4__comedia2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia3{
-        grid-area: elem16;
-    }
-    .grid4__comedia3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia4{
-        grid-area: elem17;
-    }
-    .grid4__comedia4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__comedia5{
-        grid-area: elem18;
-    }
-    .grid4__comedia5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__titulodrama{
-        grid-area: elem19;
-        font-size:50px;
-        margin: 5px;
-        padding: 25px;
-    }
-    .grid4__drama1{
-        grid-area: elem20;
-    }
-    .grid4__drama1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama2{
-        grid-area: elem21;
-    }
-    .grid4__drama2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama3{
-        grid-area: elem22;
-    }
-    .grid4__drama3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama4{
-        grid-area: elem23;
-    }
-    .grid4__drama4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__drama5{
-        grid-area: elem24;
-    }
-    .grid4__drama5:hover{
-        transform:scale(1.1)
-    }
-    .grid4__tituloterror{
-        grid-area: elem25;
-        font-size:50px;
-        margin: 5px;
-        padding: 25px;
-    }
-    .grid4__terror1{
-        grid-area: elem26;
-    }
-    .grid4__terror1:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror2{
-        grid-area: elem27;
-    }
-    .grid4__terror2:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror3{
-        grid-area: elem28;
-    }
-    .grid4__terror3:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror4{
-        grid-area: elem29;
-    }
-    .grid4__terror4:hover{
-        transform:scale(1.1)
-    }
-    .grid4__terror5{
-        grid-area: elem30;
-    }
-    .grid4__terror5:hover{
-        transform:scale(1.1)
-    }
+        .container__seriesflex{
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+        }
+        .container__imagen-series{
+            width: 400px;
+            height: 400px;
+            padding: 5px;
+            transition:transform 1s;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px black;
+        }
+        .container__imagen-series:hover{
+            transform:scale(1.1)
+        }
+       
+  

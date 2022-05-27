@@ -1,41 +1,40 @@
 .header{
-    width: 100%;
-    padding: 1rem;
-    background-color: rgb(10, 9, 8);
-    /* position: fixed;
-    z-index: 1; */
-    display:flex;
-    justify-content:space-between;
- }  
- .header__open{
-    display: none;
-    font-size: 25px;
-    color: rgb(252, 246, 246);
-}
-.header__close{
-    display: none;
-}
-.header__lenguaje{
-    height: 35px;
-    width: 130px;
-   } 
- .header__logo{
-    width: 70px;
-    height: 70px;
- }
- .header__nav{
-     display: flex;
-     flex-direction:row;
-     gap: 1rem;
- }
- .header__ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
- }
- .header__li{
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(253, 251, 251);
- } 
+     width: $ancho;
+     padding: 1rem;
+     background-color: black;
+     display:flex;
+     justify-content:space-between;
+
+     &__logo{
+        width: 70px;
+        height: 70px;
+     }
+     &__nav{
+         display: flex;
+         flex-direction:row;
+         gap: 1rem;
+     } 
+     &__open{
+        display: none;
+        font-size: 25px;
+        color: rgb(252, 246, 246);
+     }
+     &__close{
+        display: none;
+     }
+     &__lenguaje{
+        height: 35px;
+        width: 130px;
+     } 
+     &__ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+     }
+     &__li{
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(253, 251, 251);
+     } 
+}    

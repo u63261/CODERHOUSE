@@ -1,54 +1,54 @@
+
 body{
-    color: white;
-    width: 100%;
-    height: 100%;
+    color:$color-letra;
+    width: $ancho;
+    height: $alto;
     font-size: 15px;
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    background: $fondo-principal;
+    background: $fondo-principal2;
     font-family: 'Roboto', sans-serif;
  }
-
 .div__contacto{
 padding: 2rem;
 text-align: start;
 }
 .div__contactotitulo{
 font-size: 35px;
-color:white;
+color:$color-letra;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .section__container{
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    background: $fondo-principal;
+    background: $fondo-principal2;
     padding: 50px 0;
-}
-.section__containertitulo{
-    color:white;
-    font-size: 28px;
-    margin-bottom: 2rem;
-    text-align: right;
-   
-}
-.section__containerul{
-    list-style: none;
-    text-align: right;
-}
-.section__containerli{
-    margin-bottom: 10px;
-}
-.section__containerlink{
-    font-size: 13px;
-    text-decoration: none;
-    color: white;
+
+    &-titulo{
+        color:$color-letra;
+        font-size: 28px;
+        margin-bottom: 2rem;
+        text-align: right;
+    }
+    &-ul{
+        list-style: none;
+        text-align: right;
+    }
+    &-li{
+        margin-bottom: 10px;
+    }
+    &-link{
+        font-size: 13px;
+        text-decoration: none;
+        color: $color-letra;
+    }
 }
 .section__accordion{
-    color: white;
-    background: rgb(3,0,0);
-    background: linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+    color: $color-letra;
+    background: $fondo-principal;
+    background: $fondo-principal2;
     padding: 50px;
-}
-.section__accordion-bottom{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
 
+    &-bottom{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $color-letra;
+    }   
 }

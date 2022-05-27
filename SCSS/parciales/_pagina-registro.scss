@@ -1,58 +1,61 @@
-.registro__formulario{
-    background-color: black;
-      width: 550px;
-      height: 700px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;  
-      margin:auto;
-      color: white;
-      border: 3px solid rgb(246, 245, 247);
-      font-size: 20px;  
-  }
-  
-  .registro__caja{
-      background: rgb(32,30,148);
-      background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-      height: 150vh; 
-      padding: 10rem;
-  }
-  .registro__logo{
-      width: 105px;
-      height: 105px;
-      margin: auto;
-      padding: 10px;
-  }
-  .registro__titulo1{
-      margin-bottom: 45px;
-      font-size: 35px;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      text-align: center;
-  }
-      .registro__titulo2{
+.registro{
+    background: rgb(32,30,148);
+    background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
+    width: $ancho;
+    height: $alto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+
+        &__formulario{
+            background-color: black;
+            width: 550px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            margin:auto;
+            color: white;
+            border: 3px solid rgb(246, 245, 247);
+            font-size: 20px; 
+        } 
+        &__logo{
+            width: 105px;
+            height: 105px;
+            margin: auto;
+            padding: 10px;
+        }
+        &__titulo1{
+            margin-bottom: 45px;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        &__titulo2{
           font-size:20px ;
           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           margin-left: 25px;
-      }
-      .registro__link{
+        }
+        &__link{
           font-size: 20px;
           position: relative;
           left: 25px;
-      }
-      .registro__parrafo{
+        }
+         &__parrafo{
           font-size: 18px;
           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           margin: 15px;
-      }
-      .registro__casilla{
+        }
+        &__casilla{
           width: 90%;
           height: 50px;
           border-radius: 5px;
           margin: auto;
           margin-bottom: 5px;
           margin-top: 5px;
-      }
-      .registro__boton1{
+        }
+        &__boton1{
           width: 200px;
           height: 50px;
           position: relative;
@@ -60,8 +63,8 @@
           background-color: burlywood;
           border-radius: 3px;
           margin-top: 15px;
-      }
-      .registro__boton2{
+        }
+        &__boton2{
           width: 200px;
           height: 50px; 
           position: relative;
@@ -70,17 +73,20 @@
           border-radius: 3px;
           margin-top: 5px;
           margin-bottom: 15px;
-      }
-      .registro__recuerdame{
-      position: relative;
-      left: 180px;
-      }
-      .registro__checkbox{
-      position: relative;
-      left: 320px;
-      top: -20px;
-      }
-      .registro__span{
+        }
+        &__recuerdame{
+            display: none;
+            position: relative;
+            left: 180px;
+        }
+        &__checkbox{
+            display: none;
+            position: relative;
+            left: 320px;
+            top: -20px;
+        }
+        &__span{
           color: grey;
           margin-left: 155px;
-      }
+        }
+}    

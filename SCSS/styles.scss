@@ -1,3 +1,4 @@
+@import "parciales/_variables.scss";
 @import "parciales/_header.scss";
 @import "parciales/_footer.scss";
 @import "parciales/_pagina-inicio.scss";
@@ -5,7 +6,10 @@
 @import "parciales/_pagina-peliculas.scss";
 @import "parciales/_pagina-contacto.scss";
 @import "parciales/_pagina-registro.scss";
-@import "parciales/_mediasquerys.scss";
+@import "parciales/_mediasquerysmobile.scss";
+@import "parciales/_mediasquerystablet.scss";
+
+
 
  
  
