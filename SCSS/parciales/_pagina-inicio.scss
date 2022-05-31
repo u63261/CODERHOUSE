@@ -11,9 +11,15 @@ body{
    font-size: 15px;
    background: $fondo-principal;
    background: $fondo-principal;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Inter', sans-serif;
 }  
-
+.main{
+   padding-top: 100px;
+}
+.imagen__carrousel{
+width: 100vw;
+height: 90vh;
+}
 .section2{
    border-top: 25px solid rgb(26, 26, 26);
    padding: 1rem;
@@ -27,16 +33,17 @@ body{
    "elem4 elem5";
 
    &__titulo{
+      font-family: 'Inter', sans-serif;
       grid-area: elem1;
       text-align: center;
       font-size: 50px;
       margin: 4rem;
-      text-decoration: wavy;
    }
    &__categoria1{
       margin: 3rem;
       grid-area: elem2;
       text-align: center;
+      font-family: 'Inter', sans-serif;
       font-size: 35px;
       background-color: rgba(0, 0, 0, 0.5);
    }
@@ -44,6 +51,7 @@ body{
       margin: 3rem;
       grid-area: elem3;
       text-align: center;
+      font-family: 'Inter', sans-serif;
       font-size: 35px;
       background-color: rgba(0, 0, 0, 0.5);
    }
@@ -56,7 +64,7 @@ body{
       text-align: center;
       border-radius: 5px;
       border: 2px double white;
-      background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+      background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-PELICULAS.jpg);
       transition: 1s;
    }
    &__div1:hover{
@@ -70,7 +78,7 @@ body{
       text-align: center;
       border-radius: 5px;
       border: 2px double white;
-      background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+      background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-SERIES.jpg);
       transition: 1s;
    }
    &__div2:hover{
@@ -96,16 +104,17 @@ body{
    }
    &__parrafo{
       text-align: center;
-      font-size: 12px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      font-family: 'Inter', sans-serif;
    }
 }
 .separador{
    background-color: grey;
-   font-family: system-ui;
+   font-family: 'Inter', sans-serif;
    font-size: 55px;
    padding: 10px;
    color:black;
+   margin: 0px;
 }
 .section4{
    height: 100vh;
@@ -124,22 +133,24 @@ body{
    &__div1{
       grid-area: elem1;
       width: 350px;
-      min-height: 300px;
+      height: 300px;
       padding: 1rem;
       margin: auto;
+      font-family: 'Inter', sans-serif;
       border: 3px outset white;
       border-radius: 10px;
       border-bottom: none;
       background: rgb(207,189,189);
       background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-      color: black;
+      color: rgb(0, 0, 0);
    }
    &__div2{
       grid-area: elem2;
       width: 350px;
-      min-height: 300px;
+      height: 330px;
       padding: 1rem;
       margin: auto;
+      font-family: 'Inter', sans-serif;
       border: 3px outset white;
       border-radius: 10px;
       border-bottom: none;
@@ -150,9 +161,10 @@ body{
    &__div3{
       grid-area: elem3;
       width: 350px;
-      min-height: 300px;
+      height: 360px;
       padding: 1rem;
       margin: auto;
+      font-family: 'Inter', sans-serif;
       border: 3px outset white;
       border-radius: 10px;
       border-bottom: none;
@@ -165,7 +177,7 @@ body{
       text-decoration: underline;
       text-align: center;
       font-size:35px ;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
    }
    &__divparrafo{
       text-align: center;

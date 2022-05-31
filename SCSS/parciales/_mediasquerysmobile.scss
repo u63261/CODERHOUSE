@@ -13,18 +13,22 @@
         background: $fondo-principal2;
         font-family: $fuente;
      }
+     .main{
+        padding-top: 80px;
+     }
     //  ---------------------------------HEADER----------------------------------------------------------
      .header {
         width: 100%;
         padding: 1rem;
-        background-color: #0a0908;
+        background-color:silver;
+        color: black;
         display: flex;
         justify-content: space-between;
       
       &__open {
         display: block;
         font-size: 25px;
-        color: #fcf6f6;
+        color:black;
         text-decoration: none;
       }
       &__close {
@@ -34,7 +38,7 @@
         height: 25px;
         width: 70px;
         margin-top: 20px;
-        margin-left: 29px;
+        margin-left: 60px;
         margin-bottom: 1rem;
       }
       &__logo {
@@ -52,13 +56,17 @@
         list-style: none;
         display: flex;
         flex-direction: column;
+        align-items: center;
       }
       &__li {
         font-size: 13px;
-        text-decoration: none;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #fdfbfb;
+        font-family: 'Inter', sans-serif;
+        color: #fdfbfb; 
       }
+      &__li:hover{
+        color:brown;
+        text-decoration: underline;
+     }
     }
     #lateral {
         display: block;
@@ -73,6 +81,10 @@
       }
       #lateral:target {left: 0;}
 //  ---------------------------------PAGINA INICIO----------------------------------------------------------
+.imagen__carrousel{
+    width: 100%;
+    height: 100%;
+    }
     .section2{
         height: 100%;
         border-top: 15px solid rgb(58, 46, 46);
@@ -87,15 +99,14 @@
         "elem4"
         "elem3"
         "elem5";
-    
-    &__titulo{
+    }
+    .section2__titulo{
         grid-area: elem1;
         text-align: center;
-        font-size: 15px;
+        font-size: 55px;
         margin: 2rem;
-        text-decoration: wavy;
     }
-    &__categoria1{
+    .section2__categoria1{
         margin: 1rem;
         grid-area: elem2;
         text-align: center;
@@ -103,7 +114,7 @@
         text-decoration: underline 2px white;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    &__categoria2{
+    .section2__categoria2{
         margin: 1rem;
         grid-area: elem3;
         text-align: center;
@@ -111,157 +122,162 @@
         text-decoration: underline 2px white;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    
-    &__div1{
+    .section2__div1{
         width: 100%;
         height: 200px;
         margin:auto ;
         grid-area: elem4;
         border-radius: 5px;
         border: 2px double white;
-        background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+        background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-PELICULAS.jpg);
         transition: 1s;
     }
-    &__div1:hover{
+    .section2__div1:hover{
         transform: scale(0.9);
     }
-    &__div2{
+    .section2__div2{
         width: 100%;
         height: 200px;
         margin: auto;
         grid-area: elem5;
         border-radius: 5px;
         border: 2px double white;
-        background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+        background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-SERIES.jpg);
         transition: 1s;
     }
-    &__div2:hover{
+    .section2__div2:hover{
         transform: scale(0.9);
-    }
-} 
+    } 
+
+    
     .section3{
         width: 100%;
         min-height: 400px;
         background-color: white;
-        color: black;
+        color: rgb(0, 0, 0);
         padding: 50px;
     
     &__imagen{
         margin-left: 25px;
-        width: 150px;
+        width: 250px;
         height: 150px;
     }
     &__titulo{
         text-align: center;
-        font-size: 25px;
+        font-size: 35px;
     }
     &__parrafo{
         text-align: center;
         font-size: 12px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 }
 .separador{
     background-color: grey;
     font-family: system-ui;
-    font-size: 25px;
+    font-size: 35px;
     padding: 10px;
     color: black;
+    margin: 0px;
  }
     .section4{
-        height: 150vh;
-        border-top: 15px solid black;
+        min-height:200vh;
+        border-top: 15px solid rgb(0, 0, 0);
         align-content: space-around;
         background: $fondo-principal;
         background: $fondo-principal2;
         display: grid;
         grid-template-rows: repeat(4fr);
-        grid-template-columns:repeat(1fr) ;
+        grid-template-columns:repeat(1fr);
         grid-template-areas:
         "elem1"
         "elem2" 
         "elem3"
         "elem4";
-    
-    &__div1{
+    }
+    .section4__div1{
         grid-area: elem1;
-        width: 200px;
-        min-height: 20px;
-        padding: 1rem;
+        width: 300px;
+        height: 240px;
+        padding: 0rem;
         margin: auto;
-        border: 9px outset rgb(255, 255, 255);
-        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        border: 9px outset rgb(110, 11, 11);
+        border-bottom: none;
+        border-radius: 30px;
         background: rgb(207,189,189);
         background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: black;
+        color: rgb(113, 36, 165);
     }
-    &__div1:hover{
+    .section4__div1:hover{
         transform: scale(1.1);
         transition: 1s;
     }
     
-    &__div2{
+    .section4__div2{
         margin-bottom: 5px;
         grid-area: elem2;
-        width: 200px;
-        min-height: 20px;
+        width: 250px;
+        height: 260px;
         padding: 1rem;
         margin: auto;
+        font-family: 'Inter', sans-serif;
         border: 9px outset rgb(73, 72, 72);
-        border-radius: 10px;
+        border-radius: 30px;
         background: rgb(207,189,189);
         background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: black;
+        color: rgb(13, 9, 80);
     }
-    &__div2:hover{
+    .section4__div2:hover{
         transform: scale(1.1);
         transition: 1s;
     }
     
-    &__div3{
+    .section4__div3{
         margin-bottom: 5px;
         grid-area: elem3;
-        width: 200px;
-        min-height: 20px;
+        width: 250px;
+        height: 270px;
         padding: 1rem;
         margin: auto;
+        
         border: 9px outset rgb(0, 0, 0);
-        border-radius: 10px;
+        border-radius: 30px;
         background: rgb(207,189,189);
         background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: black;
+        color: rgb(119, 27, 27);
     }
-    &__div3:hover{
+    .section4__div3:hover{
         transform: scale(1.1);
         transition: 1s;
     }
-    &__divtitulo{
+    .section4__divtitulo{
         color: black;
         text-decoration: underline;
         font-size:25px ;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Inter', sans-serif;
     }
-    &__divparrafo{
+    .section4__divparrafo{
         font-size:12px ;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Inter', sans-serif;
     }
-    &__span{
+    .section4__span{
         grid-area: elem4;
         text-align: center;
         font-size: 9px;
         padding: 5px;
     }
-    &__buttom {
+    .section4__buttom {
         width: 100%;
-        height: 45px;
-        background-color: rgb(59, 59, 128);
+        height: 85px;
+        background-color: rgb(10, 10, 71);
         color: $color-letra;
         padding: 15px;
         border-radius: 7px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 12px;
       }
-    }
+           
     //  ---------------------------------FOOTER----------------------------------------------------------
     .footer__section{
         width: 100%;
@@ -300,9 +316,11 @@
     .registro{
         background: rgb(32,30,148);
         background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
-        height: 100vh; 
+        height: 100%; 
         padding:10px;
-        padding-top: 5rem;
+        padding-top: 20px;
+
+        
     
         &__formulario{
             background-color: black;
@@ -311,7 +329,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;  
-            margin:0;
             color: $color-letra;
             border: 3px solid rgb(246, 245, 247);
             font-size: 10px; 
@@ -325,12 +342,12 @@
         &__titulo1{
             margin-bottom: 15px;
             font-size: 25px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             text-align: center;
         }
         &__titulo2{
             font-size:12px ;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin-left: 20px;
         }
         &__link{
@@ -340,7 +357,7 @@
         }
         &__parrafo{
             font-size: 12px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 15px;
         }
         &__casilla{
@@ -397,7 +414,7 @@
                 font-size:45px;
                 margin: 5px;
                 padding: 25px;
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
          .container__seriesflex{
              display: flex;
@@ -427,7 +444,7 @@
         font-size:45px;
         margin: 5px;
         padding: 25px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
         .container__peliculasflex{
             display: flex;
@@ -453,7 +470,7 @@
         font-size: 15px;
         background: $fondo-principal;
         background: $fondo-principal2;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
      }
     .div__contacto{
     padding: 2rem;
@@ -462,7 +479,15 @@
     .div__contactotitulo{
     font-size: 20px;
     color: $color-letra;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
+    }
+    .div__imagen{
+        width: 250px;
+        height: 100px;
+    }
+    .div__imagen2{
+        width: 250px;
+        height: 150px;
     }
     .section__container {
         background: $fondo-principal;

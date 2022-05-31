@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
 .header {
   width: 100%;
   padding: 1rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 }
 
 .header__logo {
   width: 70px;
   height: 70px;
+  border-radius: 10px;
 }
 
 .header__nav {
@@ -40,9 +44,14 @@
 }
 
 .header__li {
-  text-decoration: none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fdfbfb;
+  text-decoration: none;
+}
+
+.header__li:hover {
+  color: brown;
+  text-decoration: overline;
 }
 
 .footer__section {
@@ -58,6 +67,9 @@
 .footer__section--logo {
   width: 150px;
   height: 50px;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  color: white;
 }
 
 .footer__section--span {
@@ -92,7 +104,16 @@ body {
   font-size: 15px;
   background: #030000;
   background: #030000;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.imagen__carrousel {
+  width: 100vw;
+  height: 90vh;
 }
 
 .section2 {
@@ -106,17 +127,18 @@ body {
 }
 
 .section2__titulo {
+  font-family: 'Inter', sans-serif;
   grid-area: elem1;
   text-align: center;
   font-size: 50px;
   margin: 4rem;
-  text-decoration: wavy;
 }
 
 .section2__categoria1 {
   margin: 3rem;
   grid-area: elem2;
   text-align: center;
+  font-family: 'Inter', sans-serif;
   font-size: 35px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -125,6 +147,7 @@ body {
   margin: 3rem;
   grid-area: elem3;
   text-align: center;
+  font-family: 'Inter', sans-serif;
   font-size: 35px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -137,7 +160,7 @@ body {
   text-align: center;
   border-radius: 5px;
   border: 2px double white;
-  background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+  background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-PELICULAS.jpg);
   transition: 1s;
 }
 
@@ -153,7 +176,7 @@ body {
   text-align: center;
   border-radius: 5px;
   border: 2px double white;
-  background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+  background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-SERIES.jpg);
   transition: 1s;
 }
 
@@ -183,16 +206,17 @@ body {
 
 .section3__parrafo {
   text-align: center;
-  font-size: 12px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
 }
 
 .separador {
   background-color: grey;
-  font-family: system-ui;
+  font-family: 'Inter', sans-serif;
   font-size: 55px;
   padding: 10px;
   color: black;
+  margin: 0px;
 }
 
 .section4 {
@@ -211,9 +235,10 @@ body {
 .section4__div1 {
   grid-area: elem1;
   width: 350px;
-  min-height: 300px;
+  height: 300px;
   padding: 1rem;
   margin: auto;
+  font-family: 'Inter', sans-serif;
   border: 3px outset white;
   border-radius: 10px;
   border-bottom: none;
@@ -225,9 +250,10 @@ body {
 .section4__div2 {
   grid-area: elem2;
   width: 350px;
-  min-height: 300px;
+  height: 330px;
   padding: 1rem;
   margin: auto;
+  font-family: 'Inter', sans-serif;
   border: 3px outset white;
   border-radius: 10px;
   border-bottom: none;
@@ -239,9 +265,10 @@ body {
 .section4__div3 {
   grid-area: elem3;
   width: 350px;
-  min-height: 300px;
+  height: 360px;
   padding: 1rem;
   margin: auto;
+  font-family: 'Inter', sans-serif;
   border: 3px outset white;
   border-radius: 10px;
   border-bottom: none;
@@ -255,7 +282,7 @@ body {
   text-decoration: underline;
   text-align: center;
   font-size: 35px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .section4__divparrafo {
@@ -285,13 +312,14 @@ body {
   width: 100%;
   background: #030000;
   background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  margin-bottom: 3rem;
 }
 
 .container__titulo-series {
   font-size: 50px;
   margin: 5px;
   padding: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .container__seriesflex {
@@ -317,13 +345,14 @@ body {
   width: 100%;
   background: #030000;
   background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+  margin-bottom: 3rem;
 }
 
 .container__titulo-peliculas {
   font-size: 45px;
   margin: 5px;
   padding: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .container__peliculasflex {
@@ -352,7 +381,7 @@ body {
   font-size: 15px;
   background: #030000;
   background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .div__contacto {
@@ -363,7 +392,14 @@ body {
 .div__contactotitulo {
   font-size: 35px;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.div__imagen2 {
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  margin-left: 50px;
 }
 
 .section__container {
@@ -411,9 +447,7 @@ body {
   background: linear-gradient(208deg, #201e94 30%, #1e8794 71%);
   width: 100%;
   height: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
+  padding: 50px;
 }
 
 .registro__formulario {
@@ -425,7 +459,7 @@ body {
   justify-content: center;
   margin: auto;
   color: white;
-  border: 3px solid #f6f5f7;
+  border: 1px solid silver;
   font-size: 20px;
 }
 
@@ -522,19 +556,23 @@ body {
     font-size: 10px;
     background: #030000;
     background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
+  }
+  .main {
+    padding-top: 80px;
   }
   .header {
     width: 100%;
     padding: 1rem;
-    background-color: #0a0908;
+    background-color: silver;
+    color: black;
     display: flex;
     justify-content: space-between;
   }
   .header__open {
     display: block;
     font-size: 25px;
-    color: #fcf6f6;
+    color: black;
     text-decoration: none;
   }
   .header__close {
@@ -544,7 +582,7 @@ body {
     height: 25px;
     width: 70px;
     margin-top: 20px;
-    margin-left: 29px;
+    margin-left: 60px;
     margin-bottom: 1rem;
   }
   .header__logo {
@@ -562,12 +600,16 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .header__li {
     font-size: 13px;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #fdfbfb;
+  }
+  .header__li:hover {
+    color: brown;
+    text-decoration: underline;
   }
   #lateral {
     display: block;
@@ -583,6 +625,10 @@ body {
   #lateral:target {
     left: 0;
   }
+  .imagen__carrousel {
+    width: 100%;
+    height: 100%;
+  }
   .section2 {
     height: 100%;
     border-top: 15px solid #3a2e2e;
@@ -596,9 +642,8 @@ body {
   .section2__titulo {
     grid-area: elem1;
     text-align: center;
-    font-size: 15px;
+    font-size: 55px;
     margin: 2rem;
-    text-decoration: wavy;
   }
   .section2__categoria1 {
     margin: 1rem;
@@ -623,7 +668,7 @@ body {
     grid-area: elem4;
     border-radius: 5px;
     border: 2px double white;
-    background-image: url(../IMAGENES/CATEGORIA-PELICULAS.jpg);
+    background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-PELICULAS.jpg);
     transition: 1s;
   }
   .section2__div1:hover {
@@ -636,7 +681,7 @@ body {
     grid-area: elem5;
     border-radius: 5px;
     border: 2px double white;
-    background-image: url(../IMAGENES/CATEGORIA-SERIES.jpg);
+    background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-SERIES.jpg);
     transition: 1s;
   }
   .section2__div2:hover {
@@ -651,27 +696,28 @@ body {
   }
   .section3__imagen {
     margin-left: 25px;
-    width: 150px;
+    width: 250px;
     height: 150px;
   }
   .section3__titulo {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
   }
   .section3__parrafo {
     text-align: center;
     font-size: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .separador {
     background-color: grey;
     font-family: system-ui;
-    font-size: 25px;
+    font-size: 35px;
     padding: 10px;
     color: black;
+    margin: 0px;
   }
   .section4 {
-    height: 150vh;
+    min-height: 200vh;
     border-top: 15px solid black;
     align-content: space-around;
     background: #030000;
@@ -683,15 +729,17 @@ body {
   }
   .section4__div1 {
     grid-area: elem1;
-    width: 200px;
-    min-height: 20px;
-    padding: 1rem;
+    width: 300px;
+    height: 240px;
+    padding: 0rem;
     margin: auto;
-    border: 9px outset white;
-    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    border: 9px outset #6e0b0b;
+    border-bottom: none;
+    border-radius: 30px;
     background: #cfbdbd;
     background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
-    color: black;
+    color: #7124a5;
   }
   .section4__div1:hover {
     transform: scale(1.1);
@@ -700,15 +748,16 @@ body {
   .section4__div2 {
     margin-bottom: 5px;
     grid-area: elem2;
-    width: 200px;
-    min-height: 20px;
+    width: 250px;
+    height: 260px;
     padding: 1rem;
     margin: auto;
+    font-family: 'Inter', sans-serif;
     border: 9px outset #494848;
-    border-radius: 10px;
+    border-radius: 30px;
     background: #cfbdbd;
     background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
-    color: black;
+    color: #0d0950;
   }
   .section4__div2:hover {
     transform: scale(1.1);
@@ -717,15 +766,15 @@ body {
   .section4__div3 {
     margin-bottom: 5px;
     grid-area: elem3;
-    width: 200px;
-    min-height: 20px;
+    width: 250px;
+    height: 270px;
     padding: 1rem;
     margin: auto;
     border: 9px outset black;
-    border-radius: 10px;
+    border-radius: 30px;
     background: #cfbdbd;
     background: linear-gradient(142deg, #cfbdbd 17%, #335a61 57%);
-    color: black;
+    color: #771b1b;
   }
   .section4__div3:hover {
     transform: scale(1.1);
@@ -735,11 +784,11 @@ body {
     color: black;
     text-decoration: underline;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .section4__divparrafo {
     font-size: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .section4__span {
     grid-area: elem4;
@@ -749,12 +798,12 @@ body {
   }
   .section4__buttom {
     width: 100%;
-    height: 45px;
-    background-color: #3b3b80;
+    height: 85px;
+    background-color: #0a0a47;
     color: white;
     padding: 15px;
     border-radius: 7px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
   }
   .footer__section {
@@ -790,9 +839,9 @@ body {
   .registro {
     background: #201e94;
     background: linear-gradient(208deg, #201e94 30%, #1e8794 71%);
-    height: 100vh;
+    height: 100%;
     padding: 10px;
-    padding-top: 5rem;
+    padding-top: 20px;
   }
   .registro__formulario {
     background-color: black;
@@ -801,7 +850,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
     color: white;
     border: 3px solid #f6f5f7;
     font-size: 10px;
@@ -815,12 +863,12 @@ body {
   .registro__titulo1 {
     margin-bottom: 15px;
     font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
   }
   .registro__titulo2 {
     font-size: 12px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-left: 20px;
   }
   .registro__link {
@@ -830,7 +878,7 @@ body {
   }
   .registro__parrafo {
     font-size: 12px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 15px;
   }
   .registro__casilla {
@@ -883,7 +931,7 @@ body {
     font-size: 45px;
     margin: 5px;
     padding: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .container__seriesflex {
     display: flex;
@@ -908,7 +956,7 @@ body {
     font-size: 45px;
     margin: 5px;
     padding: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .container__peliculasflex {
     display: flex;
@@ -931,7 +979,7 @@ body {
     font-size: 15px;
     background: #030000;
     background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .div__contacto {
     padding: 2rem;
@@ -940,7 +988,15 @@ body {
   .div__contactotitulo {
     font-size: 20px;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
+  }
+  .div__imagen {
+    width: 250px;
+    height: 100px;
+  }
+  .div__imagen2 {
+    width: 250px;
+    height: 150px;
   }
   .section__container {
     background: #030000;
