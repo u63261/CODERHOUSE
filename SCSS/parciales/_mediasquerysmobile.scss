@@ -20,10 +20,11 @@
      .header {
         width: 100%;
         padding: 1rem;
-        background-color:silver;
+        background-color:rgb(59, 58, 58);
         color: black;
         display: flex;
         justify-content: space-between;
+        z-index: 100;
       
       &__open {
         display: block;
@@ -36,9 +37,9 @@
       }
       &__lenguaje {
         height: 25px;
-        width: 70px;
+        width: 100px;
         margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 40px;
         margin-bottom: 1rem;
       }
       &__logo {
@@ -74,9 +75,8 @@
         width: 50%;
         height: 100vh;
         position: fixed;
-        z-index: 100;
         top: 0;
-        left: -300px;
+        left: -500px;
         transition: 1s;
       }
       #lateral:target {left: 0;}
@@ -103,14 +103,15 @@
     .section2__titulo{
         grid-area: elem1;
         text-align: center;
-        font-size: 55px;
-        margin: 2rem;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 1rem;
     }
     .section2__categoria1{
         margin: 1rem;
         grid-area: elem2;
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         text-decoration: underline 2px white;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -118,7 +119,7 @@
         margin: 1rem;
         grid-area: elem3;
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         text-decoration: underline 2px white;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -129,7 +130,6 @@
         grid-area: elem4;
         border-radius: 5px;
         border: 2px double white;
-        background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-PELICULAS.jpg);
         transition: 1s;
     }
     .section2__div1:hover{
@@ -142,7 +142,6 @@
         grid-area: elem5;
         border-radius: 5px;
         border: 2px double white;
-        background-image: url(/IMAGENES/categorias_pagina-inicio/CATEGORIA-SERIES.jpg);
         transition: 1s;
     }
     .section2__div2:hover{
@@ -156,33 +155,34 @@
         background-color: white;
         color: rgb(0, 0, 0);
         padding: 50px;
+        align-content: center;
     
     &__imagen{
-        margin-left: 25px;
-        width: 250px;
+        width: 150px;
         height: 150px;
     }
     &__titulo{
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
     }
     &__parrafo{
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         font-family: 'Inter', sans-serif;
     }
 }
 .separador{
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     font-family: system-ui;
     font-size: 35px;
-    padding: 10px;
-    color: black;
-    margin: 0px;
- }
+    font-weight: 500;
+    padding: 20px;
+    color:white;
+    border-bottom: 2px solid white;
+    border-top: 3px solid white;
+}
     .section4{
-        min-height:200vh;
-        border-top: 15px solid rgb(0, 0, 0);
+        min-height:100vh;
         align-content: space-around;
         background: $fondo-principal;
         background: $fondo-principal2;
@@ -194,90 +194,81 @@
         "elem2" 
         "elem3"
         "elem4";
-    }
-    .section4__div1{
-        grid-area: elem1;
-        width: 300px;
-        height: 240px;
-        padding: 0rem;
-        margin: auto;
-        font-family: 'Inter', sans-serif;
-        border: 9px outset rgb(110, 11, 11);
-        border-bottom: none;
-        border-radius: 30px;
-        background: rgb(207,189,189);
-        background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: rgb(113, 36, 165);
-    }
-    .section4__div1:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
+
+        &__caja{
+            padding: 1rem;
+            font-family: 'Inter', sans-serif;
+            border: 3px outset rgb(255, 255, 255);
+            border-bottom: none;
+            border-radius:10px;
+            color: white;
+            margin-bottom: 3rem;
+        }
     
-    .section4__div2{
-        margin-bottom: 5px;
-        grid-area: elem2;
-        width: 250px;
-        height: 260px;
-        padding: 1rem;
-        margin: auto;
-        font-family: 'Inter', sans-serif;
-        border: 9px outset rgb(73, 72, 72);
-        border-radius: 30px;
-        background: rgb(207,189,189);
-        background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: rgb(13, 9, 80);
-    }
-    .section4__div2:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
+        &__div1{
+            grid-area: elem1;
+            margin-top: 3rem;
+            width: 250px;
+            height: 260px;
+            background: $fondo-principal;
+            background: $fondo-principal2;
+        }
+        &__div1:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }
     
-    .section4__div3{
-        margin-bottom: 5px;
-        grid-area: elem3;
-        width: 250px;
-        height: 270px;
-        padding: 1rem;
-        margin: auto;
-        
-        border: 9px outset rgb(0, 0, 0);
-        border-radius: 30px;
-        background: rgb(207,189,189);
-        background: linear-gradient(142deg, rgba(207,189,189,1) 17%, rgba(51,90,97,1) 57%);
-        color: rgb(119, 27, 27);
-    }
-    .section4__div3:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
-    .section4__divtitulo{
-        color: black;
-        text-decoration: underline;
-        font-size:25px ;
-        font-family: 'Inter', sans-serif;
-    }
-    .section4__divparrafo{
-        font-size:12px ;
-        font-family: 'Inter', sans-serif;
-    }
-    .section4__span{
-        grid-area: elem4;
-        text-align: center;
-        font-size: 9px;
-        padding: 5px;
-    }
-    .section4__buttom {
-        width: 100%;
-        height: 85px;
-        background-color: rgb(10, 10, 71);
-        color: $color-letra;
-        padding: 15px;
-        border-radius: 7px;
-        font-family: 'Inter', sans-serif;
-        font-size: 12px;
-      }
-           
+        &__div2{
+            grid-area: elem2;
+            width: 250px;
+            height: 280px;
+            background: rgb(32,30,148);
+            background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);  
+        }
+        &__div2:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }
+    
+        &__div3{
+            grid-area: elem3;
+            width: 250px;
+            height: 300px;
+            background: $fondo-principal;
+            background: $fondo-principal2;
+        }
+        &__div3:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }
+        &__divtitulo{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            font-size:25px ;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+        }
+        &__divparrafo{
+            font-size:15px ;
+            font-family: 'Inter', sans-serif;
+        }
+        &__span{
+            grid-area: elem4;
+            text-align: center;
+            font-size: 9px;
+            padding: 5px;
+        }
+        &__buttom {
+            width: 100%;
+            height: 50px;
+            background-color: darkslateblue;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 7px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+        }
+    }           
     //  ---------------------------------FOOTER----------------------------------------------------------
     .footer__section{
         width: 100%;
@@ -335,8 +326,8 @@
             margin: auto; 
         }
         &__logo{
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             padding: 1px;
         }
         &__titulo1{
@@ -477,17 +468,20 @@
     text-align: start;
     }
     .div__contactotitulo{
-    font-size: 20px;
-    color: $color-letra;
+    font-size: 25px;
+    font-weight: 700;
     font-family: 'Inter', sans-serif;
+    color: $color-letra;
     }
     .div__imagen{
         width: 250px;
         height: 100px;
     }
     .div__imagen2{
+        margin: 0;
+        border-radius: 0;
         width: 250px;
-        height: 150px;
+        height: 100px;
     }
     .section__container {
         background: $fondo-principal;
