@@ -86,6 +86,7 @@
     height: 100%;
     }
     .section2{
+        width: 100%;
         height: 100%;
         border-top: 15px solid rgb(58, 46, 46);
         padding: 1rem;
@@ -102,22 +103,26 @@
     }
     .section2__titulo{
         grid-area: elem1;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 700;
         margin: 1rem;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        
     }
     .section2__categoria1{
-        margin: 1rem;
         grid-area: elem2;
+        min-height: 0;
+        margin: 1rem;
         text-align: center;
         font-size: 18px;
         text-decoration: underline 2px white;
         background-color: rgba(0, 0, 0, 0.5);
     }
     .section2__categoria2{
-        margin: 1rem;
         grid-area: elem3;
+        min-height: 0;
+        margin: 1rem;
         text-align: center;
         font-size: 18px;
         text-decoration: underline 2px white;
@@ -125,7 +130,7 @@
     }
     .section2__div1{
         width: 100%;
-        height: 200px;
+        height: 100%;
         margin:auto ;
         grid-area: elem4;
         border-radius: 5px;
@@ -135,7 +140,7 @@
     
     .section2__div2{
         width: 100%;
-        height: 200px;
+        height: 100%;
         margin: auto;
         grid-area: elem5;
         border-radius: 5px;
@@ -178,8 +183,10 @@
     border-top: 3px solid white;
 }
     .section4{
-        min-height:100vh;
-        align-content: space-around;
+        min-height:100vh; 
+        padding-top: 0rem;
+        margin-bottom: 0rem;
+        justify-items: center;
         background: $fondo-principal;
         background: $fondo-principal2;
         display: grid;
@@ -192,6 +199,8 @@
         "elem4";
 
         &__caja{
+            width: 250px;
+            margin: 1rem;
             padding: 1rem;
             font-family: 'Inter', sans-serif;
             border: 3px outset rgb(255, 255, 255);
@@ -199,35 +208,22 @@
             border-radius:10px;
             color: white;
             margin-bottom: 3rem;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(27,21,102,1) 70%);
         }
-    
         &__div1{
+            margin-top: 2rem;
             grid-area: elem1;
-            margin-top: 3rem;
-            width: 250px;
-            height: 260px;
-            background: $fondo-principal;
-            background: $fondo-principal2;
+            height: 300px;
         }
-        
-    
         &__div2{
             grid-area: elem2;
-            width: 250px;
-            height: 280px;
-            background: rgb(32,30,148);
-            background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);  
+            height: 330px;
         }
-        
-    
         &__div3{
             grid-area: elem3;
-            width: 250px;
-            height: 300px;
-            background: $fondo-principal;
-            background: $fondo-principal2;
+            height: 360px;
         }
-        
         &__divtitulo{
             color: rgb(255, 255, 255);
             text-decoration: underline;
@@ -264,6 +260,7 @@
         padding-top: 15px;
         display: flex;
         flex-direction: column;
+        gap: 0;
         align-items: center;
         background-color: rgb(12, 8, 8);
     

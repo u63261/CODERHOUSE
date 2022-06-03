@@ -18,9 +18,11 @@ body{
 }
 .imagen__carrousel{
 width: 100vw;
-height: 90vh;
+height: 80vh;
 }
 .section2{
+   width: 100%;
+   height: 100%;
    border-top: 25px solid rgb(26, 26, 26);
    padding: 1rem;
    margin-bottom: 2rem;
@@ -36,31 +38,35 @@ height: 90vh;
       font-family: 'Inter', sans-serif;
       grid-area: elem1;
       text-align: center;
-      font-size: 50px;
-      margin: 4rem;
+      font-size: 35px;
+      padding: 2rem;
    }
    &__categoria1{
-      margin: 3rem;
+      min-width: 100px;
+      min-height: 50px;
       grid-area: elem2;
+      margin: 2rem;
       text-align: center;
       font-family: 'Inter', sans-serif;
       font-size: 35px;
-      background-color: rgba(0, 0, 0, 0.5);
+      text-decoration: underline;
    }
-   &__categoria2{
-      margin: 3rem;
+   &__categoria2{ 
+      min-width: 100px;
+      min-height: 50px;
       grid-area: elem3;
+      margin: 2rem;
       text-align: center;
       font-family: 'Inter', sans-serif;
       font-size: 35px;
-      background-color: rgba(0, 0, 0, 0.5);
+      text-decoration: underline;
    }
 
    &__div1{
-      height: 400px;
-      width: 700px;
+      width: 450px;
+      height: 250px;
       grid-area: elem4;
-      border-radius: 50%;
+      border-radius: 15px;
       border: 2px double white;
       transition: 1s;
    }
@@ -68,10 +74,10 @@ height: 90vh;
       transform: scale(0.9);
    }
    &__div2{
-      height: 400px;
-      width: 700px;
+      width: 450px;
+      height: 250px;
       grid-area: elem5;
-      border-radius: 50%;
+      border-radius: 55px;
       border: 2px double white;
       transition: 1s;
    }
@@ -88,16 +94,16 @@ height: 90vh;
    padding: 50px;
 
    &__imagen{
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
    }
    &__titulo{
       text-align: center;
-      font-size: 35px;
+      font-size: 25px;
    }
    &__parrafo{
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       font-family: 'Inter', sans-serif;
    }
 }
@@ -110,10 +116,10 @@ height: 90vh;
    margin: 0px;
 }
 .section4{
-   height: 100vh;
-   margin-bottom: 1rem;
-   border-top: 15px solid black;
-   align-content: space-around;
+   min-height: 100%;
+   padding-top: 2rem;
+   margin-bottom: 2rem;
+   justify-content: space-evenly;
    background: $fondo-principal;
    background: $fondo-principal2;
    display: grid;
@@ -123,19 +129,23 @@ height: 90vh;
    "elem1 elem2 elem3"
    "elem4 elem4 elem4";
 
-   &__div1{
-      grid-area: elem1;
-      width: 350px;
-      height: 300px;
+   &__caja{
+      width: 300px;
+      margin: 1rem;
       padding: 1rem;
-      margin: auto;
       font-family: 'Inter', sans-serif;
       border: 3px outset white;
-      border-radius: 10px;
       border-bottom: none;
-      background: $fondo-principal;
-      background: $fondo-principal2;
-      color: rgb(255, 255, 255);
+      border-radius:10px;
+      color: white;
+      margin-bottom: 3rem;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(27,21,102,1) 70%);
+  }
+
+   &__div1{
+      grid-area: elem1;
+      height: 320px;
    }
    &__div1:hover{
       transform: scale(1.1);
@@ -143,17 +153,7 @@ height: 90vh;
   }
    &__div2{
       grid-area: elem2;
-      width: 350px;
-      height: 330px;
-      padding: 1rem;
-      margin: auto;
-      font-family: 'Inter', sans-serif;
-      border: 3px outset white;
-      border-radius: 10px;
-      border-bottom: none;
-      background: rgb(32,30,148);
-      background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%); 
-      color: rgb(255, 255, 255);
+      height: 320px;
    }
    &__div2:hover{
       transform: scale(1.1);
@@ -161,17 +161,7 @@ height: 90vh;
   }
    &__div3{
       grid-area: elem3;
-      width: 350px;
-      height: 360px;
-      padding: 1rem;
-      margin: auto;
-      font-family: 'Inter', sans-serif;
-      border: 3px outset white;
-      border-radius: 10px;
-      border-bottom: none;
-      background: $fondo-principal;
-      background: $fondo-principal2;
-      color: rgb(255, 255, 255);
+      height: 340px;
    }
    &__div3:hover{
       transform: scale(1.1);
@@ -187,16 +177,21 @@ height: 90vh;
    }
    &__divparrafo{
       text-align: center;
-      font-size:20px ;
+      font-size:18px ;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
+   &__span-precio{
+      font-size: 25px;
+      font-weight: 700;
+      color: darkorchid;
+   }
    &__span{
+      margin-top: 2rem;
       grid-area: elem4;
       text-align: center;
-      font-size: 15px;
+      font-size: 12px;
    }
    &__buttom{
-      margin-bottom: 0;
       width: 100%;
       background-color: rgb(59, 59, 128);
       color: white;
