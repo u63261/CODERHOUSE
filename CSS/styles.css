@@ -314,6 +314,31 @@ body {
   font-size: 18px;
 }
 
+body {
+  background: black;
+}
+
+.container__series-buscador {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 25px;
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+}
+
+.container__series-buscador-barra {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+}
+
+.container__series-logo {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
 .container__series {
   width: 100%;
   background: #030000;
@@ -322,10 +347,13 @@ body {
 }
 
 .container__titulo-series {
-  font-size: 50px;
+  font-size: 45px;
   margin: 5px;
   padding: 25px;
   font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  color: burlywood;
 }
 
 .container__seriesflex {
@@ -335,16 +363,49 @@ body {
 }
 
 .container__imagen-series {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   padding: 5px;
   transition: transform 1s;
   border-radius: 10px;
-  box-shadow: 0 10px 10px black;
 }
 
 .container__imagen-series:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.container__series-titulos {
+  text-align: center;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: 700;
+  padding: 15px;
+}
+
+body {
+  background: black;
+}
+
+.container__peliculas-buscador {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 25px;
+  list-style: none;
+  background: #030000;
+  background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+}
+
+.container__peliculas-buscador-barra {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+}
+
+.container__peliculas-logo {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
 }
 
 .container__peliculas {
@@ -359,6 +420,9 @@ body {
   margin: 5px;
   padding: 25px;
   font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  color: burlywood;
 }
 
 .container__peliculasflex {
@@ -368,16 +432,23 @@ body {
 }
 
 .container__imagen-peliculas {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   padding: 5px;
   transition: transform 1s;
   border-radius: 10px;
-  box-shadow: 0 10px 10px black;
 }
 
 .container__imagen-peliculas:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.container__peliculas-titulos {
+  text-align: center;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: 700;
+  padding: 15px;
 }
 
 body {
@@ -584,7 +655,7 @@ body {
   .header__open {
     display: block;
     font-size: 25px;
-    color: black;
+    color: white;
     text-decoration: none;
   }
   .header__close {
@@ -758,11 +829,11 @@ body {
   }
   .section4__div2 {
     grid-area: elem2;
-    height: 330px;
+    height: 325px;
   }
   .section4__div3 {
     grid-area: elem3;
-    height: 360px;
+    height: 345px;
   }
   .section4__divtitulo {
     color: white;
@@ -908,10 +979,19 @@ body {
     color: grey;
     margin-left: 85px;
   }
+  .container__series-buscador {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .container__series-buscador-barra {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+  }
   .container__series {
     width: 100%;
-    background: #030000;
-    background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
+    background: black;
   }
   .container__titulo-series {
     font-size: 45px;
@@ -933,13 +1013,21 @@ body {
   .container__imagen-series:hover {
     transform: perspective(1.1);
   }
+  .container__peliculas-buscador {
+    width: 100%;
+    height: 100%;
+  }
+  .container__peliculas-buscador-barra {
+    width: 250px;
+    height: 50px;
+  }
   .container__peliculas {
     width: 100%;
     background: #030000;
     background: linear-gradient(188deg, #030000 30%, #1e8394 76%);
   }
   .container__titulo-peliculas {
-    font-size: 45px;
+    font-size: 35px;
     margin: 5px;
     padding: 25px;
     font-family: 'Inter', sans-serif;
@@ -957,6 +1045,13 @@ body {
   }
   .container__imagen-peliculas:hover {
     transform: perspective(1.1);
+  }
+  .container__peliculas-titulos {
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: 700;
+    padding: 15px;
   }
   body {
     color: white;
