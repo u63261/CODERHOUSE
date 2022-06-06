@@ -359,7 +359,7 @@ body {
 .container__seriesflex {
   display: flex;
   flex-direction: row;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .container__imagen-series {
@@ -428,7 +428,7 @@ body {
 .container__peliculasflex {
   display: flex;
   flex-direction: row;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .container__imagen-peliculas {
@@ -664,9 +664,6 @@ body {
   .header__lenguaje {
     height: 25px;
     width: 100px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-bottom: 1rem;
   }
   .header__logo {
     width: 50px;
@@ -680,6 +677,7 @@ body {
   .header__ul {
     height: 100%;
     width: 100%;
+    padding: 0px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -695,7 +693,7 @@ body {
     text-decoration: underline;
   }
   #lateral {
-    display: block;
+    display: flex;
     background-color: #0e0d0d;
     width: 50%;
     height: 100vh;

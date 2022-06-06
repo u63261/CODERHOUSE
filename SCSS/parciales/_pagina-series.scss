@@ -37,7 +37,7 @@ body{
 .container__seriesflex{
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow: scroll;
     
 }
 .container__imagen-series{

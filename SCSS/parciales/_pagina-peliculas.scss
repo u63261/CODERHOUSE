@@ -40,7 +40,7 @@ body{
 .container__peliculasflex{
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow: scroll;
 }
 .container__imagen-peliculas{
     width: 300px;
