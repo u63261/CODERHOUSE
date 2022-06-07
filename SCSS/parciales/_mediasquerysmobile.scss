@@ -308,7 +308,7 @@
         &__logo{
             width: 50px;
             height: 50px;
-            padding: 1px;
+            padding: 5px;
         }
         &__titulo1{
             margin-bottom: 15px;
@@ -378,20 +378,18 @@
     .container__series-buscador{
         width: 100%;
         height: 100%;
-        text-align: center;
     }
     .container__series-buscador-barra{
          width: 250px;
         height: 50px;
-        text-align: center;
     }
     .container__series{
         width: $ancho;
-        background: black;
-        
+        background: $fondo-principal;
+        background: $fondo-principal2;
     }
     .container__titulo-series{
-        font-size:45px;
+        font-size:35px;
         margin: 5px;
         padding: 25px;
         font-family: 'Inter', sans-serif;
@@ -409,6 +407,13 @@
     }
     .container__imagen-series:hover{
         transform:perspective(1.1)
+    }
+    .container__series-titulos{
+        text-align: center;
+        font-size: 23px;
+        font-style: oblique;
+        font-weight: 400;
+        padding: 10px;
     }
          
         
@@ -451,10 +456,10 @@
     }
     .container__peliculas-titulos{
         text-align: center;
-        font-size: 25px;
+        font-size: 23px;
         font-style: oblique;
-        font-weight: 700;
-        padding: 15px;
+        font-weight: 400;
+        padding: 10px;
     }       
             
     
