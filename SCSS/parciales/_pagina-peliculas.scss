@@ -1,6 +1,4 @@
-body{
-     background: black;
-}
+
 .container__peliculas-buscador{
     width: 100%;
     height: 100px;
@@ -9,8 +7,6 @@ body{
     list-style: none;
     background: $fondo-principal;
     background: $fondo-principal2;
-    // position: fixed;
-    // z-index: 100;
 }
 .container__peliculas-buscador-barra{
     width: 400px;
@@ -44,8 +40,8 @@ body{
     overflow: scroll;
 }
 .container__imagen-peliculas{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     padding: 5px;
     transition:transform 1s;
     border-radius: 10px;
@@ -59,4 +55,5 @@ body{
     font-style: oblique;
     font-weight: 700;
     padding: 15px;
+    text-decoration: underline;
 }       
