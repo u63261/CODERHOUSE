@@ -995,6 +995,8 @@ body {
     flex-direction: column;
     justify-content: center;
     font-size: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .registro__logo {
     width: 50px;
@@ -1096,6 +1098,9 @@ body {
   .div__contactotitulo {
     font-size: 25px;
     font-weight: 700;
+  }
+  .div__contactoparrafo {
+    font-size: 13px;
   }
   .div__imagen {
     width: 250px;
