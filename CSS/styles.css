@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
+
 .footer__section--link-instagram {
   color: violet;
   font-size: 35px;
@@ -150,7 +151,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2fr);
   grid-template-rows: repeat(3fr);
-  grid-template-areas: "elem1 elem1" "elem2 elem3" "elem4 elem5";
+  grid-template-areas: "elem1 elem1"
+ "elem2 elem3"
+ "elem4 elem5";
 }
 
 .section2__titulo {
@@ -256,7 +259,8 @@ body {
   display: grid;
   grid-template-rows: repeat(200px 200px);
   grid-template-columns: repeat(25px 50px 25px);
-  grid-template-areas: "elem1 elem2 elem3" "elem4 elem4 elem4";
+  grid-template-areas: "elem1 elem2 elem3"
+ "elem4 elem4 elem4";
 }
 
 .section4__caja {
@@ -880,7 +884,11 @@ body {
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(5fr);
-    grid-template-areas: "elem1" "elem2" "elem4" "elem3" "elem5";
+    grid-template-areas: "elem1"
+ "elem2"
+ "elem4"
+ "elem3"
+ "elem5";
   }
   .section2__titulo {
     grid-area: elem1;
@@ -953,7 +961,10 @@ body {
     display: grid;
     grid-template-rows: repeat(4fr);
     grid-template-columns: repeat(1fr);
-    grid-template-areas: "elem1" "elem2"  "elem3" "elem4";
+    grid-template-areas: "elem1"
+ "elem2" 
+ "elem3"
+ "elem4";
   }
   .section4__caja {
     width: 250px;
