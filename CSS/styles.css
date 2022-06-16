@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
+.footer__section--link-instagram {
+  color: violet;
+  font-size: 35px;
+  margin-left: 3px;
+  text-decoration: none;
+}
+
+.footer__section--link-twitter {
+  color: blue;
+  font-size: 35px;
+  margin-left: 3px;
+  text-decoration: none;
+}
+
+.footer__section--link-facebook {
+  color: white;
+  font-size: 35px;
+  margin-left: 3px;
+  text-decoration: none;
+}
+
+.footer__section--link-youtube {
+  color: red;
+  font-size: 35px;
+  margin-left: 3px;
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
   padding: 1rem;
